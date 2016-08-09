@@ -1,34 +1,32 @@
 package com.poloit.animal;
 public class Species
 {
-	private String name;
-	public String getName()
+	private int id_Specie;
+	public int GetSpeCie()
 	{
-		return name;
+		return id_Specie;
 	}
 
-	public void setName(String name)
+	public void setId(int pId)
 	{
-		this.name = name;
+		this.id_Specie = pId;
 	}
-
-	public Food getAlimento()
-	{
-		return alimento;
-	}
-
-	public void setAlimento(Food alimento)
-	{
-		this.alimento = alimento;
-	}
-
-	private Food alimento;
 	
-	public Species(){}
-
-	public Species(String nombre, Food alimento)
+	private String Description;
+	
+	public String GetDes()
 	{
-		setAlimento(alimento);
-		setName(nombre);
+		return Description;
+	}
+	
+	public void  setDes(String pDes)
+	{
+		this.Description =  pDes;
+	}
+
+	public Species(int pId, String pDes)
+	{
+		setId(pId);
+		setDes(pDes);
 	}
 }

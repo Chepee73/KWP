@@ -3,41 +3,36 @@ package com.poloit.animal;
 public class Medication
 {
 	private String nombre;
-	private int dose;
-	Medication(){}
 	
-	Medication(String nombre, int dose)
+	public String GetNombre()
+	{
+		return nombre;
+	}
+	
+	public  void setNombre(String pNombre)
+	{
+		this.nombre = pNombre;
+	}
+	
+	private int idMedication;
+	
+	public int GetMedication()
+	{
+		return idMedication;
+	}
+	
+	public void setMedication(int pIdMedication)
+	{
+		this.idMedication = pIdMedication;
+	}
+	
+	Medication()
+	{}
+
+	Medication(String nombre, int pIdMedication)
 	{
 		setNombre(nombre);
-		setDose(dose);
+		setMedication(pIdMedication);
 	}
 	
-	public int getDose()
-	{
-		return dose;
-	}
-
-	public void setDose(int dose)
-	{
-		this.dose = dose;
-	}
-
-	public void setNombre(String nombre)
-	{
-		this.nombre = nombre;
-	}
-	
-	public String getNombre()
-	{
-		return this.nombre;
-	}
-
-	@Override
-	public String toString()
-	{
-		String str = "";
-		if(!getNombre().equalsIgnoreCase("Ninguno"))
-			str = getDose() + " " + getNombre();
-		return str;
-	}
 }
