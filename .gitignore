@@ -15,6 +15,7 @@ hs_err_pid*
 *.gitkeep
 *.bak
 
+
 # Maven files
 
 target/
@@ -25,4 +26,8 @@ pom.xml.next
 release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
+
 .mvn/timing.properties
+
+
+
