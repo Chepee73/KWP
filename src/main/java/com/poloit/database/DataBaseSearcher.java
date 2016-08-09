@@ -1,55 +1,46 @@
 package com.poloit.database;
 
-import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 
 import com.poloit.utils.DataBaseUtils;
 
 public class DataBaseSearcher
 {
-	private static Connection conn;
-	
-	public static void setConn(Connection con)
+	public static ResultSet selectAllAnimals()
 	{
-		conn = con;
+		String query = "SELECT A.name, A.age, B.description, C.description "
+				+ "FROM Animal as A "
+				+ "INNER JOIN HealthCondition as B "
+				+ "INNER JOIN Specie as C "
+				+ "WHERE A.Condition_idCondition = B.idCondition "
+				+ "AND A.Specie_idSpecie = C.idSpecie;";
+		ResultSet rs = executeQuery(query);
+		return rs;
 	}
 	
-	public static void selectAllAnimals()
+	public static ResultSet selectAnimalsByName(String name) throws SQLException
 	{
-		String query = "SELECT * FROM Animal;";
-		try
-		{
-			ResultSet rs = DataBaseUtils.GetResultSet(conn, query);
-			while (rs.next())
-			{
-				
-				int id = rs.getInt("id");
-				String name = rs.getString("name");
-
-				System.out.println(id + " " + name);
-			}
-		}
-
-		catch (SQLException se)
-		{
-			se.printStackTrace();
-		}
+		String query = "SELECT * FROM Animal WHERE Animal.name = ?";
+		PreparedStatement ps = DataBaseConnector.getConn().prepareStatement(query);
+		ps.setString(0, name);
+		ResultSet rs = executeQuery(ps.toString());
+		
+		return rs;
 	}
-
-	public static void tableModificationQuery(int id, String name)
+	
+	private static ResultSet executeQuery(String query)
 	{
+		ResultSet rs = null;
 		try
 		{
-			Statement stmt = DataBaseUtils.GetStatement(conn);
-
-			String query = "INSERT INTO Animal VALUES(" + id + ", '" + name + "');";
-			stmt.executeUpdate(query);
+			rs = DataBaseUtils.GetResultSet(DataBaseConnector.getConn(), query);
 		}
 		catch (SQLException se)
 		{
 			se.printStackTrace();
 		}
+		return rs;
 	}
 }

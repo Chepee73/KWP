@@ -16,12 +16,12 @@ public class DataBaseConnector
 
 	// JDBC driver name and database URL
 	static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-	static final String DB_URL = "jdbc:mysql://localhost/Veterinary";
+	static final String DB_URL = "jdbc:mysql://10.210.9.12/Veterinarydb";
 
 	// Database credentials
 	// Hard Coded for the moment
-	static final String USER = "root";
-	static final String PASS = "1234";
+	static final String USER = "cezar.azevedo";
+	static final String PASS = "cezar.azevedo";
 
 	private DataBaseConnector() throws SQLException
 	{
