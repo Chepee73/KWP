@@ -11,6 +11,6 @@ public class Food
 
 	Food(String description)
 	{
-
+		this.description = description;
 	}
 }
