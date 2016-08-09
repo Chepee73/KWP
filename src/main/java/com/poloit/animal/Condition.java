@@ -1,20 +1,21 @@
 package com.poloit.animal;
 
-public enum Condition
+public class Condition
 {
-	SICK(new Medication("Pastillas", 5)),
-	HEALTHY(new Medication("Ninguno", 0));
-	
-	private Medication medicamento;
+	private int idCondition;
+	public int getIdCondition()
+	{
+		return idCondition;
+	}
+	public String getDescription()
+	{
+		return description;
+	}
+	private String description;
 	
 	private Condition(){}
-	private Condition(Medication medicamento)
+	private Condition(String description)
 	{
-		this.medicamento = medicamento;
-	}
-	
-	public Medication getMedicamento()
-	{
-		return medicamento;
+		this.description = description;
 	}
 }

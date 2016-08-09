@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.sql.Statement;
 
 public class DataBaseConnector
@@ -61,42 +62,8 @@ public class DataBaseConnector
 		}
 	}
 
-	public static void selectionQuery()
+	public static Connection getConn()
 	{
-		String query = "SELECT * FROM Animal;";
-		try
-		{
-			Statement stmt;
-			stmt = conn.createStatement();
-			ResultSet rs = stmt.executeQuery(query);
-			while (rs.next())
-			{
-				
-				int id = rs.getInt("id");
-				String name = rs.getString("name");
-
-				System.out.println(id + " " + name);
-			}
-		}
-
-		catch (SQLException se)
-		{
-			se.printStackTrace();
-		}
-	}
-
-	public static void tableModificationQuery(int id, String name)
-	{
-		try
-		{
-			Statement stmt = conn.createStatement();
-
-			String query = "INSERT INTO Animal VALUES(" + id + ", '" + name + "');";
-			stmt.executeUpdate(query);
-		}
-		catch (SQLException se)
-		{
-			se.printStackTrace();
-		}
+		return conn;
 	}
 }

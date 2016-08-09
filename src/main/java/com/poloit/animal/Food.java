@@ -2,30 +2,15 @@ package com.poloit.animal;
 
 public class Food
 {
-	private String name;
-	
-	public String getName()
+	private int idFood;
+	private String description;
+
+	Food()
 	{
-		return name;
 	}
 
-	public void setName(String nombre)
+	Food(String description)
 	{
-		this.name = nombre;
-	}
 
-	public Food(){}
-	
-	public Food(String nombre)
-	{
-		setName(nombre);
-	}
-	
-	@Override
-	public String toString()
-	{
-		String str = name;
-		return str;
 	}
 }
-
