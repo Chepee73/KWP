@@ -39,6 +39,7 @@ public class Veterinary
 		
 	}
 	
+	
 	public static void ShowAll()
 	{
 		for (Animal animal : animales)
