@@ -1,0 +1,10 @@
+ Titan | Dog | 13 | Sick | 2 | Herviboro | 23:19
+ Pachoncito | Cat | 7 | Healthy | 0 | Herviboro | 21:48
+ Tommy | Cat | 4 | Sick | 2 | Carnivoro | 23:53
+ Rocko | Rabbit | 4 | Sick | 2 | Carnivoro | 07:17
+ Aradia | Rabbit | 6 | Sick | 1 | Omnivoro | 21:14
+ Bruno | Rabbit | 9 | Sick | 4 | Omnivoro | 21:39
+ Panda | Hamster | 3 | Sick | 4 | Herviboro | 02:16
+ Sophie | Parrot | 5 | Sick | 4 | Herviboro | 06:48
+ Pachoncito | Dog | 7 | Healthy | 0 | Carnivoro | 12:56
+ Camila | Rabbit | 11 | Sick | 1 | Herviboro | 15:42
