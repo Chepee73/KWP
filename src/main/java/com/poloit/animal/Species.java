@@ -1,32 +1,23 @@
 package com.poloit.animal;
 public class Species
 {
+	// Not sure if id is necessary
 	private int id_Specie;
-	public int GetSpeCie()
-	{
-		return id_Specie;
-	}
-
-	public void setId(int pId)
-	{
-		this.id_Specie = pId;
-	}
 	
-	private String Description;
+	private String description;
 	
-	public String GetDes()
+	public String getDes()
 	{
-		return Description;
+		return description;
 	}
 	
 	public void  setDes(String pDes)
 	{
-		this.Description =  pDes;
+		this.description =  pDes;
 	}
 
-	public Species(int pId, String pDes)
+	public Species(String pDes)
 	{
-		setId(pId);
 		setDes(pDes);
 	}
 }

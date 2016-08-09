@@ -2,7 +2,28 @@ package com.poloit.animal;
 
 public class Animal
 {
+	// Not sure if id is necessary
 	private int idAnimal;
+	public String getName()
+	{
+		return name;
+	}
+
+	public int getAge()
+	{
+		return age;
+	}
+
+	public Condition getCondition()
+	{
+		return condition;
+	}
+
+	public Species getSpecies()
+	{
+		return species;
+	}
+
 	private String name;
 	private int age;
 	private Condition condition;

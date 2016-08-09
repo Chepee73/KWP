@@ -1,17 +1,17 @@
 package com.poloit.animal;
 
-public class Alimentacion
+public class Alimentation
 {
 	private Food food;
 	private Animal animal;
 
 	int mealTime;
 
-	public Alimentacion()
+	public Alimentation()
 	{
 	}
 
-	public Alimentacion(Food food, Animal animal)
+	public Alimentation(Food food, Animal animal)
 	{
 		this.food = food;
 		this.animal = animal;
