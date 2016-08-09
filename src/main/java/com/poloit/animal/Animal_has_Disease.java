@@ -4,7 +4,6 @@ public class Animal_has_Disease
 {
 	private int pillsQuantity;
 	
-	
 	public int GetPills()
 	{
 		return pillsQuantity;
@@ -22,5 +21,6 @@ public class Animal_has_Disease
 		System.out.print("Id Disease: "+ disease.GetDisease());
 		System.out.print("Name medication: "+medication.GetNombre());
 		System.out.println("Id Medication: "+ medication.GetMedication());
+		System.out.println("Pills Quantity: "+ GetPills());
 	}
 }
