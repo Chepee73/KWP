@@ -26,7 +26,7 @@ public class FileSplitter
 		Scanner scanner;
 		try 
 		{
-			scanner = new Scanner(new File(".\\src\\main\\resources\\datos_animales.txt"));
+			scanner = new Scanner(file);
 		} 
 		catch (FileNotFoundException e) 
 		{
