@@ -1,26 +1,37 @@
 package com.poloit.generador;
-import java.io.*;
-import java.util.*;
-import java.math.*;
+import java.util.ArrayList;
+
 public class Name 
 {
-	String[] name=new String[15];
-	void Fill_Name()
+	//APPLIED ARRAYLIST INSTEAD OF VECTOR
+	
+	ArrayList<String> name=new ArrayList<String>();
+	private String listname;
+	void fillName()
 	{
-		name[0]="Bruno";
-		name[1]="Camila";
-		name[2]="Lola";
-		name[3]="Luana";
-		name[4]="Aradia";
-		name[5]="Panda";
-		name[6]="Sophie";
-		name[7]="Yakka";
-		name[8]="Conan";
-		name[9]="Tommy";
-		name[10]="Titan";
-		name[11]="Pachoncito";
-		name[12]="Rocko";
-		name[13]="Lenny";
-		name[14]="Emma";
+		name.add("Bruno");
+		name.add("Lola");
+		name.add("Aradia");
+		name.add("Pachoncito");
+		name.add("Camila");
+		name.add("Conan");
+		name.add("Yakka");
+		name.add("Sophie");
+		name.add("Tommy");
+		name.add("Lenny");
+		name.add("Rocko");
+		name.add("Titan");
+		name.add("Emma");
+		name.add("Panda");
+		name.add("Luana");
 	}
+	public String GetListName()
+	{
+		return listname;
+	}
+	public void SetListName(int i)
+	{
+		listname=name.get(i);
+	}
+	
 };

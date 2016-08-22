@@ -1,12 +1,15 @@
 package com.poloit.generador;
+import java.util.ArrayList;
 
 public class Food 
 {
-	String [] food=new String[3];
-	void Fill_Food()
+	//APPLIED ARRAYLIST INSTEAD OF VECTOR
+
+	ArrayList<String> food=new ArrayList<String>();
+	void fillFood()
 	{
-		food[0]="Carnivoro";
-		food[1]="Herviboro";
-		food[2]="Omnivoro";
+		food.add("Herbivore");
+		food.add("Carnivore");
+		food.add("Omnivore");
 	}
 }
