@@ -3,7 +3,7 @@ package com.poloit.generador;
 public class Type 
 {
 	String [] type=new String[7];
-	void Fill_Type()
+	public void Fill_Type()
 	{
 		type[0]="Dog";
 		type[1]="Cat";

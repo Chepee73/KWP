@@ -3,7 +3,7 @@ package com.poloit.generador;
 public class Food 
 {
 	String [] food=new String[3];
-	void Fill_Food()
+	public void Fill_Food()
 	{
 		food[0]="Carnivoro";
 		food[1]="Herviboro";

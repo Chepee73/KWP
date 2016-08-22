@@ -5,7 +5,7 @@ public class Condition
 {
 	String condition;
 	Random rd2=new Random();
-	void Condition(int flag)
+	public void Condition(int flag)
 	{
 		if(flag==1)
 		{
