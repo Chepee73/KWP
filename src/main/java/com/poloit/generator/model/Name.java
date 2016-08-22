@@ -1,26 +1,34 @@
 package com.poloit.generator.model;
+
 import java.io.*;
 import java.util.*;
 import java.math.*;
-public class Name 
+
+public class Name
 {
-	String[] name=new String[15];
+	private String[] getName = new String[15];
+
+	public String[] getName()
+	{
+		return getName;
+	}
+
 	public void Fill_Name()
 	{
-		name[0]="Bruno";
-		name[1]="Camila";
-		name[2]="Lola";
-		name[3]="Luana";
-		name[4]="Aradia";
-		name[5]="Panda";
-		name[6]="Sophie";
-		name[7]="Yakka";
-		name[8]="Conan";
-		name[9]="Tommy";
-		name[10]="Titan";
-		name[11]="Pachoncito";
-		name[12]="Rocko";
-		name[13]="Lenny";
-		name[14]="Emma";
+		getName[0] = "Bruno";
+		getName[1] = "Camila";
+		getName[2] = "Lola";
+		getName[3] = "Luana";
+		getName[4] = "Aradia";
+		getName[5] = "Panda";
+		getName[6] = "Sophie";
+		getName[7] = "Yakka";
+		getName[8] = "Conan";
+		getName[9] = "Tommy";
+		getName[10] = "Titan";
+		getName[11] = "Pachoncito";
+		getName[12] = "Rocko";
+		getName[13] = "Lenny";
+		getName[14] = "Emma";
 	}
 };
