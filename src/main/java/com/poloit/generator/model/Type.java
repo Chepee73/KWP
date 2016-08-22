@@ -2,7 +2,11 @@ package com.poloit.generator.model;
 
 public class Type 
 {
-	String [] type=new String[7];
+	private String [] type=new String[7];
+	public String[] getType()
+	{
+		return type;
+	}
 	public void Fill_Type()
 	{
 		type[0]="Dog";

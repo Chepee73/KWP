@@ -6,7 +6,7 @@ public class Condition {
 	private String condition;
 	Random rd2 = new Random();
 
-	public Condition(int flag) {
+	public void setCondition(int flag) {
 		if (flag == 1) {
 			condition = "Healthy";
 		} else {
