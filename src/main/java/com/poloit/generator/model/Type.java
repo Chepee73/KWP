@@ -1,21 +1,29 @@
 package com.poloit.generator.model;
+import java.util.ArrayList;
 
 public class Type 
 {
-	private String [] type=new String[7];
-	public String[] getType()
+	//APPLIED ARRAYLIST INSTEAD OF VECTOR
+
+	public ArrayList<String> type=new ArrayList<String>();
+	private String listtype;
+	public void fillType()
 	{
-		return type;
+		type.add("Dog");
+		type.add("Cat");
+		type.add("Parrot");
+		type.add("Turtle");
+		type.add("Hamster");
+		type.add("Rabbit");
+		type.add("Fish");
 	}
-	public void Fill_Type()
+	public String getType()
 	{
-		type[0]="Dog";
-		type[1]="Cat";
-		type[2]="Parrot";
-		type[3]="Turtle";
-		type[4]="Hamster";
-		type[5]="Rabbit";
-		type[6]="Fish";
+		return listtype;
+	}
+	public void setType(int i)
+	{
+		listtype=type.get(i);
 	}
 
 }
