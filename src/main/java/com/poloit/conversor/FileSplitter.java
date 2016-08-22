@@ -8,6 +8,7 @@ import java.util.Scanner;
 //Coded by diego.f
 public class FileSplitter 
 {
+	
 	private static ArrayList<String> rowOnList = new ArrayList<String>();
 	
 	//Methods

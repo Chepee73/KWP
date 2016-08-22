@@ -3,16 +3,15 @@ package com.poloit.database;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.SQLIntegrityConstraintViolationException;
-import java.sql.Statement;
+
+import com.poloit.conversor.OneRow;
 
 public class DataBaseConnector
 {
 	// Singleton
 	private static DataBaseConnector dbConn = null;
-	private static Connection conn = null;
+	public static Connection conn = null;
 
 	// JDBC driver name and database URL
 	static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
@@ -45,7 +44,7 @@ public class DataBaseConnector
 			ex.printStackTrace();
 		}
 	}
-
+	
 	public static void closeConnection()
 	{
 		try
