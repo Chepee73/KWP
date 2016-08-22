@@ -1,4 +1,4 @@
-package com.poloit.generador;
+package com.poloit.generator.model;
 import java.io.*;
 import java.util.*;
 import java.math.*;
