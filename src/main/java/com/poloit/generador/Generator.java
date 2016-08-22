@@ -11,6 +11,10 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
+import com.poloit.generator.model.Condition;
+import com.poloit.generator.model.Name;
+import com.poloit.generator.model.Type;
+
 public class Generator {
 
 	// USED STRING BUILDER INSTED OF JUST CONCATENATING STRINGS IN A
@@ -72,17 +76,17 @@ public class Generator {
 				// DATA IS FILLED RANDOMLY
 				// APPLIED PROPERTIES (GET/SET)
 
-				name.SetListName(rd.nextInt(name.name.size()));
-				names.add(name.GetListName());
+				name.setListName(rd.nextInt(name.getName().size()));
+				names.add(name.getListName());
 
-				type.SetType(rd.nextInt(type.type.size()));
-				types.add(type.GetType());
+				type.setType(rd.nextInt(type.type.size()));
+				types.add(type.getType());
 
 				animalage.Setage(rd.nextInt(14 - 1) + 1);
 				age.add(animalage.Getage());
 
-				condition.SetCondition(rd.nextInt(2 - 1 + 1) + 1);
-				animalcondition.add(condition.GetCondition());
+				condition.setCondition(rd.nextInt(2 - 1 + 1) + 1);
+				animalcondition.add(condition.getCondition());
 
 				animalpills.Setpills(rd.nextInt(rd.nextInt(5 - 1) + 1) + 1, animalcondition.get(i));
 				numberofpills.add(animalpills.Getpills());
