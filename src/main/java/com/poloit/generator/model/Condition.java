@@ -1,4 +1,4 @@
-package com.poloit.generador;
+package com.poloit.generator.model;
 import java.util.Random;
 
 public class Condition 
