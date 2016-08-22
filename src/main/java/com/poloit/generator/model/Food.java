@@ -2,7 +2,11 @@ package com.poloit.generator.model;
 
 public class Food 
 {
-	String [] food=new String[3];
+	private String [] food=new String[3];
+	public String[] getFood()
+	{
+		return food;
+	}
 	public void Fill_Food()
 	{
 		food[0]="Carnivoro";
