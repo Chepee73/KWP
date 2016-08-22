@@ -1,4 +1,4 @@
-package com.poloit.generador;
+package com.poloit.generator;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -11,6 +11,11 @@ import java.util.List;
 import java.util.Random;
 
 import javax.naming.spi.DirectoryManager;
+
+import com.poloit.generator.model.Condition;
+import com.poloit.generator.model.Food;
+import com.poloit.generator.model.Name;
+import com.poloit.generator.model.Type;
 public class Generador 
 {
 	
