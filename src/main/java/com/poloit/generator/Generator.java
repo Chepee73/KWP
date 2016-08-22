@@ -3,9 +3,11 @@ package com.poloit.generator;
 import java.io.File;
 import java.util.List;
 
+import com.poloit.animal.Animal;
+
 public interface Generator {
 
-	List<String> generateAnimals(File file, Character separator);
+	List<Animal> generateAnimals(File file, Character separator);
 	List<String> getLineFiles();
 	Character getSeparator();
 	String getPathFile();
