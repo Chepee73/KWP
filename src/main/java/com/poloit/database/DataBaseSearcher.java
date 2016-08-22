@@ -6,8 +6,19 @@ import java.sql.SQLException;
 
 import com.poloit.utils.DataBaseUtils;
 
+/**
+ * This class is used for create the querys for search in the DB.
+ * 
+ * @author Cezar Azevedo
+ */
 public class DataBaseSearcher
 {
+	
+	/**
+	 * This method is used to create the Query for select all the animals in the DB.
+	 * 
+	 * @return a ResultSet with the duty to execute the query.
+	 */
 	public static ResultSet selectAllAnimals()
 	{
 		String query = "SELECT A.name, A.age, B.description, C.description "
@@ -20,6 +31,11 @@ public class DataBaseSearcher
 		return rs;
 	}
 	
+	/**
+	 * This method is used to create the Query for select animals by the name in the DB.
+	 * 
+	 * @return a ResultSet with the duty to execute the query.
+	 */
 	public static ResultSet selectAnimalsByName(String name) throws SQLException
 	{
 		String query = "SELECT * FROM Animal WHERE Animal.name = ?";
@@ -30,6 +46,12 @@ public class DataBaseSearcher
 		return rs;
 	}
 	
+	/**
+	 *  This method get the query as a parameter and fill a ResultSet with it 
+	 * 
+	 * @param query
+	 * @return
+	 */
 	private static ResultSet executeQuery(String query)
 	{
 		ResultSet rs = null;

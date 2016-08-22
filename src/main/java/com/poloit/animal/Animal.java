@@ -1,9 +1,13 @@
 package com.poloit.animal;
 
+/**
+ * The class Animal with his name, age, condition, specie. 
+ * His public constructor and the 'get and set' methods for encapsulation
+ */
 public class Animal
 {
 	// Not sure if id is necessary
-	private int idAnimal;
+	//private int idAnimal;
 	public String getName()
 	{
 		return name;

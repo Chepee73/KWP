@@ -1,4 +1,10 @@
 package com.poloit.animal;
+
+/**
+ * The class Species with his id and description. 
+ * His public constructor and the 'get and set' methods for encapsulation
+ */
+
 public class Species
 {
 	// Not sure if id is necessary
