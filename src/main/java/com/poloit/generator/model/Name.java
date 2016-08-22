@@ -1,11 +1,11 @@
-package com.poloit.generador;
+package com.poloit.generator.model;
 import java.io.*;
 import java.util.*;
 import java.math.*;
 public class Name 
 {
 	String[] name=new String[15];
-	void Fill_Name()
+	public void Fill_Name()
 	{
 		name[0]="Bruno";
 		name[1]="Camila";
