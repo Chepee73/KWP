@@ -1,5 +1,10 @@
 package com.poloit.animal;
 
+/**
+ * The class Alimentation with the food and the Animal for that food. 
+ * And a public Constructor for the food and the animal. 
+ */
+
 public class Alimentation
 {
 	private Food food;

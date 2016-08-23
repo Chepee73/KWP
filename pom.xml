@@ -6,7 +6,26 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Veterinaria</name>
 	<description>Primer Proyecto</description>
-
+	<build>
+	    <plugins>
+		<!--We force Maven to use the JDK 1.8 Version. -->
+	        <plugin>
+	            <groupId>org.apache.maven.plugins</groupId>
+	            <artifactId>maven-compiler-plugin</artifactId>
+	            <configuration>
+	                <source>1.8</source>
+	                <target>1.8</target>
+	            </configuration>
+	        </plugin>
+	    	<plugin>
+			<groupId>org.sonarsource.scanner.maven</groupId>
+			<artifactId>sonar-maven-plugin</artifactId>
+			<version>3.0.2</version>
+		</plugin>
+	
+	    </plugins>
+	</build>
+	
 	<dependencies>
 		<dependency>
 			<groupId>mysql</groupId>
