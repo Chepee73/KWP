@@ -1,17 +1,21 @@
 package com.poloit.animal;
 
+/**
+ * The class Medication with his name and id. 
+ * His public constructor and the 'get and set' methods for encapsulation
+ */
 public class Medication
 {
-	private String nombre;
+	private String name;
 	
 	public String GetNombre()
 	{
-		return nombre;
+		return name;
 	}
 	
-	public  void setNombre(String pNombre)
+	public void setName(String pName)
 	{
-		this.nombre = pNombre;
+		this.name = pName;
 	}
 	
 	private int idMedication;
@@ -29,9 +33,9 @@ public class Medication
 	Medication()
 	{}
 
-	Medication(String nombre, int pIdMedication)
+	Medication(String name, int pIdMedication)
 	{
-		setNombre(nombre);
+		setName(name);
 		setMedication(pIdMedication);
 	}
 	

@@ -1,5 +1,9 @@
 package com.poloit.animal;
 
+/**
+ *  The class Disease with the id for the disease, the 'get set' methods and the constructor for SetDisease.
+ *
+ */
 public class Disease
 {
 	private int IdDisease;
@@ -14,12 +18,12 @@ public class Disease
 		this.IdDisease = pDisease;
 	}
 	
-	Disease()
+	public Disease()
 	{
 		IdDisease = 0;
 	}
 	
-	Disease(int pDisease)
+	public Disease(int pDisease)
 	{
 		setDisease(pDisease);
 	}

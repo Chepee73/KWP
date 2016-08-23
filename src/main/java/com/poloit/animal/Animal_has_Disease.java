@@ -1,5 +1,10 @@
 package com.poloit.animal;
 
+/**
+ * The class used if the Animal has a disease. 
+ * The typical 'get and set' methods for encapsulation.
+ */
+
 public class Animal_has_Disease 
 {
 	private Animal animal;

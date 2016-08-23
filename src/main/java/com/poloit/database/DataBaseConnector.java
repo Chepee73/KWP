@@ -8,8 +8,14 @@ import java.sql.SQLException;
 import java.sql.SQLIntegrityConstraintViolationException;
 import java.sql.Statement;
 
+/**
+ * This class connect the whole project to the database, it uses the Singleton patron for assure only one DB connection.
+ * @author Cezar Azevedo
+ */
+
 public class DataBaseConnector
 {
+	
 	// Singleton
 	private static DataBaseConnector dbConn = null;
 	private static Connection conn = null;
@@ -23,6 +29,10 @@ public class DataBaseConnector
 	static final String USER = "cezar.azevedo";
 	static final String PASS = "cezar.azevedo";
 
+	/**
+	 * Private constructor for the DataBaseConnector class 
+	 * @throws SQLException
+	 */
 	private DataBaseConnector() throws SQLException
 	{
 		if (dbConn != null)
@@ -30,6 +40,9 @@ public class DataBaseConnector
 		conn = DriverManager.getConnection(DB_URL, USER, PASS);
 	}
 
+	/**
+	 * This method open the connection with the DB and calls the DataBaseConnector method.
+	 */
 	public static void openConnection()
 	{
 		try
@@ -46,6 +59,9 @@ public class DataBaseConnector
 		}
 	}
 
+	/**
+	 * This method close the connection with the DB.
+	 */
 	public static void closeConnection()
 	{
 		try
@@ -62,6 +78,10 @@ public class DataBaseConnector
 		}
 	}
 
+	/**
+	 * This method get the connection with the DB.
+	 * @return a Connection instance called 'Conn'
+	 */
 	public static Connection getConn()
 	{
 		return conn;

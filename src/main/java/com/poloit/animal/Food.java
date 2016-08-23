@@ -1,15 +1,18 @@
 package com.poloit.animal;
 
+/**
+ * The food class with id for the food, the description and the public constructor.
+ */
 public class Food
 {
 	private int idFood;
 	private String description;
 
-	Food()
+	public Food()
 	{
 	}
 
-	Food(String description)
+	public Food(String description)
 	{
 		this.description = description;
 	}
