@@ -14,6 +14,7 @@ public class Veterinary
 
 	public static void main(String[] args)
 	{
+		int index = 0;
 		
 		Database_txt data = new Database_txt();
 		
@@ -31,9 +32,11 @@ public class Veterinary
 			e.printStackTrace();
 		}
 		
-		data.SplitFile();
-		data.Push();
-		
+		while(index < 9){
+			data.SplitFile(index);
+			Database_txt.Push();
+			index++;
+		}
 		DataBaseConnector.closeConnection();
 		ShowAll();
 		

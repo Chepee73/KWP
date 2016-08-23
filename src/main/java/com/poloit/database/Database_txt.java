@@ -2,6 +2,7 @@ package com.poloit.database;
 
 import java.io.File;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
@@ -23,11 +24,11 @@ public class Database_txt
 	
 	static OneRow row = new OneRow();
 	
-	public void SplitFile()
+	public void SplitFile(int index)
 	{
 		lines=FileSplitter.splitFile(txt);
 	
-		LinesDirty = lines.get(0);
+		LinesDirty = lines.get(index);
 		
 		row = new OneRow(LinesDirty);
 	}
@@ -37,12 +38,28 @@ public class Database_txt
 		
 		PreparedStatement stmt = null;
 		try {
-			stmt = DatabaseConnector.conn.prepareStatement("INSERT INTO Specie values (")
-			stmt = DataBaseConnector.conn.prepareStatement("INSERT INTO Animal VALUES (NULL,?,?,?,3)");
-		} catch (SQLException e1) {
-			e1.printStackTrace();
-		}
-		try {
+			stmt = DataBaseConnector.conn.prepareStatement("INSERT IGNORE INTO specie values (NULL,?)");
+			String Specie = row.getType();
+			
+			stmt.setString(1, Specie);
+			
+			stmt.executeUpdate();
+			
+			
+			System.out.println("OK");
+			
+			stmt = DataBaseConnector.conn.prepareStatement("SELECT idSpecie FROM specie WHERE description = (?)");
+			
+			
+			stmt.setString(1, Specie);
+			
+			ResultSet rs = stmt.executeQuery();
+			
+			rs.next();
+			int id = rs.getInt(1);
+				
+			stmt = DataBaseConnector.conn.prepareStatement("INSERT INTO Animal VALUES (NULL,?,?,?,?)");
+				
 			String name = row.getName();
 			int age = row.getAge();
 			int state = row.getCondition();
@@ -51,10 +68,11 @@ public class Database_txt
 			stmt.setString(1,name);
 			stmt.setInt(2, age);
 			stmt.setInt(3, state);
-			
+			stmt.setInt(4, id);
 			stmt.executeUpdate();
-		} catch (SQLException e) {
-			e.printStackTrace();
+
+		} catch (SQLException e1) {
+			e1.printStackTrace();
 		}
 	}
 	

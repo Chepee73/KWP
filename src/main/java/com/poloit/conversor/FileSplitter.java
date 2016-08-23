@@ -17,6 +17,7 @@ public class FileSplitter
 	public static ArrayList<String> splitFile(File file)
 	{
 		rowOnList = fillRowOnList(file);
+		
 		return rowOnList;
 	}	
 	

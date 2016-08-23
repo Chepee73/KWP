@@ -79,6 +79,7 @@ public class OneRow
 		//This constructor receives a String splited from a text file
 		public OneRow(String row)
 		{
+			System.out.println(row);
 			//Check if the row has the correct format
 			if(row.contains("|"))
 				formatRowToFields(row);

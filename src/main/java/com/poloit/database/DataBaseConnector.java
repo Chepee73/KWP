@@ -2,10 +2,7 @@ package com.poloit.database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
-
-import com.poloit.conversor.OneRow;
 
 public class DataBaseConnector
 {
