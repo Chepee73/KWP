@@ -13,6 +13,7 @@ public class Condition
 	{
 		return description;
 	}
+	
 	private String description;
 	
 	public Condition(){}
@@ -20,4 +21,5 @@ public class Condition
 	{
 		this.description = description;
 	}
+	
 }

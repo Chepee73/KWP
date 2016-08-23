@@ -6,8 +6,7 @@ package com.poloit.animal;
  */
 public class Animal
 {
-	// Not sure if id is necessary
-	//private int idAnimal;
+
 	public String getName()
 	{
 		return name;
@@ -27,21 +26,28 @@ public class Animal
 	{
 		return species;
 	}
+	
+	public Food getFood()
+	{
+		return food;
+	}
 
 	private String name;
 	private int age;
 	private Condition condition;
 	private Species species;
+	private Food food;
 
 	public Animal()
 	{
 	}
 
-	public Animal(String name, int age, Condition condition, Species species)
+	public Animal(String name, int age, Condition condition, Species species, Food food)
 	{
 		this.name = name;
 		this.age = age;
 		this.condition = condition;
 		this.species = species;
+		this.food = food;
 	}
 }

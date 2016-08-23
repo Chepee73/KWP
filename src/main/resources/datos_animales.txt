@@ -1,10 +1,10 @@
- Yakka | Parrot | 12 | Sick | 4 | Carnivoro | 16:14
- Titan | Fish | 12 | Sick | 1 | Omnivoro | 17:20
- Rocko | Hamster | 10 | Sick | 2 | Herviboro | 23:51
- Lenny | Hamster | 1 | Sick | 2 | Carnivoro | 10:24
- Bruno | Parrot | 9 | Sick | 3 | Omnivoro | 02:19
- Emma | Parrot | 13 | Sick | 3 | Omnivoro | 06:10
- Camila | Cat | 12 | Sick | 1 | Herviboro | 15:18
- Rocko | Rabbit | 1 | Sick | 4 | Omnivoro | 20:17
- Emma | Hamster | 7 | Sick | 2 | Carnivoro | 08:14
- Luana | Rabbit | 7 | Sick | 3 | Omnivoro | 20:46
+ | Pachoncito | Hamster | 7 | Sick | 1 | Herbivore | 19:19 | 
+ | Aradia | Dog | 3 | Sick | 4 | Omnivore | 19:32 | 
+ | Pachoncito | Turtle | 4 | Sick | 1 | Omnivore | 11:06 | 
+ | Yakka | Turtle | 6 | Healthy | 0 | Carnivore | 14:58 | 
+ | Aradia | Dog | 5 | Healthy | 0 | Herbivore | 19:48 | 
+ | Luana | Rabbit | 13 | Healthy | 0 | Carnivore | 16:04 | 
+ | Camila | Turtle | 5 | Sick | 1 | Omnivore | 17:12 | 
+ | Rocko | Turtle | 12 | Sick | 1 | Omnivore | 14:21 | 
+ | Panda | Dog | 3 | Healthy | 0 | Omnivore | 03:04 | 
+ | Tommy | Fish | 2 | Sick | 1 | Herbivore | 02:22 | 

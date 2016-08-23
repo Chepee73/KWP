@@ -6,6 +6,7 @@ import java.util.ArrayList;
 
 import com.poloit.animal.Animal;
 import com.poloit.animal.Condition;
+import com.poloit.animal.Food;
 import com.poloit.animal.Species;
 
 public class AnimalDTO
@@ -25,7 +26,8 @@ public class AnimalDTO
 			int age = rs.getInt("A.age");
 			Condition condition = new Condition(rs.getString("B.description"));
 			Species species = new Species(rs.getString("C.description"));
-			animals.add(new Animal(name, age, condition, species));
+			Food food = new Food(rs.getString("D.description"));
+			animals.add(new Animal(name, age, condition, species, food));
 		}
 		return animals;
 	}
