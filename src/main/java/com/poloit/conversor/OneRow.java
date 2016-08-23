@@ -11,7 +11,7 @@ public class OneRow
 		private String name;
 		private String type;
 		private int age;
-		private String condition;
+		private int condition;
 		private int pillsQuantity;
 		private String food;
 		private Date mealTime;
@@ -29,7 +29,7 @@ public class OneRow
 		{
 			return age;
 		}
-		public String getCondition() 
+		public int getCondition() 
 		{
 			return condition;
 		}
@@ -59,7 +59,7 @@ public class OneRow
 		{
 			this.age = age;
 		}
-		public void setCondition(String condition) 
+		public void setCondition(int condition) 
 		{
 			this.condition = condition;
 		}
@@ -79,6 +79,7 @@ public class OneRow
 		//This constructor receives a String splited from a text file
 		public OneRow(String row)
 		{
+			System.out.println(row);
 			//Check if the row has the correct format
 			if(row.contains("|"))
 				formatRowToFields(row);
@@ -96,7 +97,10 @@ public class OneRow
 			setName(splittedRow[0]);
 			setType(splittedRow[1]);
 			setAge(Integer.parseInt(splittedRow[2]));
-			setCondition(splittedRow[3]);
+			if(splittedRow[3].equalsIgnoreCase("sick"))
+				setCondition(1);
+			else
+				setCondition(2);
 			setPillsQuantity(Integer.parseInt(splittedRow[4]));
 			setFood(splittedRow[5]);
 			
@@ -116,4 +120,6 @@ public class OneRow
 			//We pass the Date object to the Setter
 			setMealTime(mealTime);
 		}
+		public OneRow()
+		{}
 }

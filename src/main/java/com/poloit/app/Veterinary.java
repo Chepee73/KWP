@@ -6,6 +6,7 @@ import com.poloit.animal.Animal;
 import com.poloit.database.AnimalDTO;
 import com.poloit.database.DataBaseConnector;
 import com.poloit.database.DataBaseSearcher;
+import com.poloit.database.Database_txt;
 
 public class Veterinary
 {
@@ -14,6 +15,11 @@ public class Veterinary
 
 	public static void main(String[] args)
 	{
+		int index = 0;
+		
+		Database_txt data = new Database_txt();
+		
+		
 		DataBaseConnector.openConnection();
 		System.out.println("Opened connection");
 		try
@@ -26,10 +32,15 @@ public class Veterinary
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		while(index < 9){
+			data.SplitFile(index);
+			Database_txt.Push();
+			index++;
+		}
 		DataBaseConnector.closeConnection();
-
 		ShowAll();
-
+		
 	}
 
 	public static void ShowAll()
