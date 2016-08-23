@@ -6,7 +6,21 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Veterinaria</name>
 	<description>Primer Proyecto</description>
-
+	
+	<!--We force Maven to use the JDK 1.8 Version. -->
+	<build>
+	    <plugins>
+	        <plugin>
+	            <groupId>org.apache.maven.plugins</groupId>
+	            <artifactId>maven-compiler-plugin</artifactId>
+	            <configuration>
+	                <source>1.8</source>
+	                <target>1.8</target>
+	            </configuration>
+	        </plugin>
+	    </plugins>
+	</build>
+	
 	<dependencies>
 		<dependency>
 			<groupId>mysql</groupId>
