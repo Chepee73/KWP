@@ -1,43 +1,51 @@
 package com.poloit.app;
-import java.sql.SQLException;
-import java.util.ArrayList;
-
-import com.poloit.animal.Animal;
-import com.poloit.database.AnimalDTO;
-import com.poloit.database.DataBaseConnector;
-import com.poloit.database.DataBaseSearcher;
+import com.poloit.generador.Generator;
 
 public class Veterinary
 {
 
-	static ArrayList<Animal> animals = new ArrayList<Animal>();
-
 	public static void main(String[] args)
 	{
-		DataBaseConnector.openConnection();
-		System.out.println("Opened connection");
-		try
+		if(args.length < 1)
 		{
-			System.out.println("Filling array");
-			animals = AnimalDTO.getAnimals(DataBaseSearcher.selectAllAnimals());
+			System.out.println("Usage: Veterinary <option>");
+			System.exit(-1);
 		}
-		catch (SQLException e)
+		String option = args[0].toLowerCase();
+		
+		switch(option)
 		{
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			case "generator":
+				generator();
+				break;
+			case "start":
+				start();
+				break;
+			case "help":
+				help();
+				break;
+			default:
+				System.out.println("Wrong argument.");
+				break;
 		}
-		DataBaseConnector.closeConnection();
-
-		ShowAll();
-
 	}
-
-	public static void ShowAll()
+	
+	private static void generator()
 	{
-		for (Animal animal : animals)
-		{
-			System.out.println(animal.getName() + " " + animal.getAge() + " " + animal.getCondition().getDescription()
-					+ " " + animal.getSpecies().getDes());
-		}
+		System.out.println("Generating new file...");
+		Generator.main(null);	
+		System.out.println("Finished.");
+	}
+	private static void start()
+	{
+		System.out.println("Imagine the application started :)");
+	}
+	private static void help()
+	{
+		System.out.println("This is the Veterinary program v: 0.0.1\n"
+				+ "Usage: Veterinary <option>\n"
+				+ "Arguments:\n"
+				+ "\tgenerator\t\tGenerates new random values to insert into the database.\n"
+				+ "\tstart\t\t\tStarts the application.\n");
 	}
 }
