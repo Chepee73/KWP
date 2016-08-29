@@ -7,12 +7,10 @@ public class Sick extends Condition
 	Sick()
 	{
 	}
-
 	Sick(int pills)
 	{
 		this.pills = pills;
 	}
-
 	@Override
 	public String toString()
 	{
