@@ -6,10 +6,15 @@ public class Food
 	//APPLIED ARRAYLIST INSTEAD OF VECTOR
 
 	ArrayList<String> food=new ArrayList<String>();
-	void fillFood()
+	
+	public void fillFood()
 	{
 		food.add("Herbivore");
 		food.add("Carnivore");
 		food.add("Omnivore");
+	}
+
+	public ArrayList<String> getFood() {
+		return food;
 	}
 }

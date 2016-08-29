@@ -11,6 +11,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
+import com.poloit.conversor.FileSplitter;
+import com.poloit.conversor.OneRow;
 import com.poloit.generator.model.Condition;
 import com.poloit.generator.model.Name;
 import com.poloit.generator.model.Type;
@@ -19,6 +21,7 @@ public class Generator {
 
 	// USED STRING BUILDER INSTED OF JUST CONCATENATING STRINGS IN A
 	// SYSTEM.OUT.PRINLN()
+	
 	public static String Printdata(String names, String types, int age, String condition, int pills, String food,
 			String hourmin) {
 		StringBuilder sb = new StringBuilder(100);
@@ -35,6 +38,9 @@ public class Generator {
 	public static void main(String[] args) {
 
 		// VARIABLES
+		OneRow or=null;
+		FileSplitter fs = null;
+		
 		int i = 0;
 		Random rd = new Random();
 		boolean f = new File(".\\src\\main\\resources").mkdirs();
@@ -110,19 +116,27 @@ public class Generator {
 						animalfood.get(i), hourmin.get(i).format(date)));
 
 				bw.newLine();
+				fs.splitFile(d);
 			}
-		} catch (IOException e) {
+		} 
+		catch (IOException e)
+		{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		finally {
-			try {
+		finally 
+		{
+			
+			try
+			{
 				bw.close();
-			} catch (IOException e) {
+			} 
+			catch (IOException e) 
+			{
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
-
+		
 	}
 }
