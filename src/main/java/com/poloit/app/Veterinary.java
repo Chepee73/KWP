@@ -1,4 +1,7 @@
 package com.poloit.app;
+import java.io.IOException;
+import java.util.Scanner;
+
 import com.poloit.generador.Generator;
 
 public class Veterinary
@@ -38,6 +41,13 @@ public class Veterinary
 	}
 	private static void start()
 	{
+		boolean running = true;
+		do
+		{
+			System.out.println("1 - Ver Animales.");
+			System.out.print("Opcion: ");
+			int opcion = new Scanner(System.in).nextInt();
+		}while(running);
 		System.out.println("Imagine the application started :)");
 	}
 	private static void help()
