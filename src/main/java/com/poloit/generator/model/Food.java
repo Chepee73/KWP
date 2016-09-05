@@ -1,16 +1,32 @@
 package com.poloit.generator.model;
 
-public class Food 
+import java.util.Date;
+
+/**
+ * The food class with id for the food, the description and the public constructor.
+ */
+public class Food
 {
-	private String [] food=new String[3];
-	public String[] getFood()
+	private String description;
+	private Date foodTime;
+
+	public Food(String description, Date foodTime)
 	{
-		return food;
+		this.foodTime = foodTime;
+		this.description = description;
 	}
-	public void Fill_Food()
+	
+	@Override
+	public String toString()
 	{
-		food[0]="Carnivoro";
-		food[1]="Herviboro";
-		food[2]="Omnivoro";
+		return "Food: " + description + " - Time: " + foodTime.getHours() + ":" + foodTime.getMinutes();
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public Date getFoodTime() {
+		return foodTime;
 	}
 }

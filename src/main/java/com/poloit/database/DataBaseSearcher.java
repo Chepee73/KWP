@@ -21,12 +21,7 @@ public class DataBaseSearcher
 	 */
 	public static ResultSet selectAllAnimals()
 	{
-		String query = "SELECT A.name, A.age, B.description, C.description "
-				+ "FROM Animal as A "
-				+ "INNER JOIN HealthCondition as B "
-				+ "INNER JOIN Specie as C "
-				+ "WHERE A.Condition_idCondition = B.idCondition "
-				+ "AND A.Specie_idSpecie = C.idSpecie;";
+		String query = "";
 		ResultSet rs = executeQuery(query);
 		return rs;
 	}

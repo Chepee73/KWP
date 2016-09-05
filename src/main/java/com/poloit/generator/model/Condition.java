@@ -1,22 +1,16 @@
 package com.poloit.generator.model;
 
-public class Condition 
-{
-	private String listcondition;
-	public String getCondition()
-	{
-		return listcondition;
-		
+public enum Condition {
+
+	HEALTHY("Healthy"), SICK("Sick");
+
+	private String description;
+
+	private Condition(String description) {
+		this.description = description;
 	}
-	public void setCondition(int flag)
-	{
-		if(flag==1)
-		{
-			listcondition="Healthy";			
-		}
-		else
-		{			
-			listcondition="Sick";			
-		}	
+
+	public String getDescription() {
+		return description;
 	}
 }

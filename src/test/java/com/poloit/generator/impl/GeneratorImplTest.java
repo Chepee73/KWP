@@ -3,6 +3,8 @@ package com.poloit.generator.impl;
 import static org.junit.Assert.fail;
 
 import java.io.File;
+import java.io.IOException;
+import java.text.ParseException;
 import java.util.List;
 
 import org.junit.Assert;
@@ -14,23 +16,24 @@ import com.poloit.generator.Generator;
 public class GeneratorImplTest {
 
 	@Test
-	public void testGenerateAnimals() {
-		Generator generator = new GeneratorImpl();
-		File file= new File(GeneratorImpl.class.getResource("").getFile());
+	public void testGenerateAnimals() throws NumberFormatException, IOException, ParseException {
+		File file = new File(GeneratorImplTest.class.getResource("/datos_animales.txt").getFile());
 		Character separator = '|';
-		
-		List<Animal> animals = generator.generateAnimals(file, separator);
+		Generator generator = new GeneratorImpl(separator, file);
+
+		List<Animal> animals = generator.generateAnimals();
 		Assert.assertEquals("Pepito", animals.get(0).getName());
 
 	}
 
 	@Test
-	public void testGetLineFiles() {
-		Generator generator = new GeneratorImpl();
-		File file= new File(GeneratorImpl.class.getResource("").getFile());
+	public void testGetLineFiles() throws IOException {
+		File file = new File(GeneratorImpl.class.getResource("datos_animales.txt").getFile());
 		Character separator = '|';
-		
+		Generator generator = new GeneratorImpl(separator, file);
+
 		List<String> lines = generator.getLineFiles();
+		
 		Assert.assertEquals("Pepito | Omnivoro", lines.get(0));
 
 	}

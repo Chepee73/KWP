@@ -1,47 +1,61 @@
 package com.poloit.animal;
 
+import com.poloit.generator.model.Food;
+
 /**
- * The class Animal with his name, age, condition, specie. 
- * His public constructor and the 'get and set' methods for encapsulation
+ * The class Animal with his name, age, condition, specie. His public
+ * constructor and the 'get and set' methods for encapsulation
  */
-public class Animal
-{
-	// Not sure if id is necessary
-	//private int idAnimal;
-	public String getName()
-	{
+public abstract class Animal {
+
+	public String getName() {
 		return name;
 	}
 
-	public int getAge()
-	{
+	public int getAge() {
 		return age;
 	}
 
-	public Condition getCondition()
-	{
-		return condition;
+	public Species getSpecies() {
+		return species;
 	}
 
-	public Species getSpecies()
-	{
-		return species;
+	public Food getFood() {
+		return food;
 	}
 
 	private String name;
 	private int age;
-	private Condition condition;
 	private Species species;
+	private Food food;
 
-	public Animal()
-	{
-	}
-
-	public Animal(String name, int age, Condition condition, Species species)
-	{
+	public Animal(String name, int age, Species species, Food food) {
 		this.name = name;
 		this.age = age;
-		this.condition = condition;
 		this.species = species;
+		this.food = food;
 	}
+
+	public String printAnimal(Character separator) {
+		StringBuilder builder = new StringBuilder(this.name);
+		builder.append('|');
+		builder.append(this.species.getDes());
+		builder.append('|');
+		builder.append(this.age);
+		builder.append('|');
+		builder.append(getCondition());
+		builder.append('|');
+		builder.append(getPills());
+		builder.append('|');
+		builder.append(this.food.getDescription());
+		builder.append('|');
+		builder.append(this.food.getFoodTime());
+		builder.append('|');
+
+		return builder.toString();
+	}
+
+	public abstract int getPills();
+
+	public abstract String getCondition();
 }

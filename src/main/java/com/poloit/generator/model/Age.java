@@ -1,4 +1,4 @@
-package com.poloit.generador;
+package com.poloit.generator.model;
 
 public class Age 
 {
