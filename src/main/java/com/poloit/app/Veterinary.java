@@ -1,8 +1,6 @@
 package com.poloit.app;
 
 import java.io.File;
-import java.io.IOException;
-import java.text.ParseException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -54,14 +52,8 @@ public class Veterinary {
 		try {
 			Generator generator = new GeneratorImpl('|',
 					new File(Veterinary.class.getResource("/datos_animales.txt").getFile()));
-			animals = generator.generateAnimals();
+			animals = generator.generateAnimals(100);
 		} catch (NumberFormatException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (ParseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

@@ -2,14 +2,15 @@ package com.poloit.generator.impl;
 
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.charset.Charset;
 import java.nio.file.Files;
+import java.nio.file.OpenOption;
+import java.nio.file.Paths;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
@@ -24,10 +25,8 @@ import com.poloit.generator.model.GeneratorInformation;
 public class GeneratorImpl implements Generator {
 
 	private Character separator = '|';
-	Random rd = new Random();
 	private File file;
 
-	//
 	public GeneratorImpl(Character separator, File file) {
 		this.separator = separator;
 		this.file = file;
@@ -59,7 +58,7 @@ public class GeneratorImpl implements Generator {
 
 	public List<String> getLineFiles() throws IOException {
 		Validate.notNull(this.file);
-		return Files.readAllLines(this.file.toPath());
+		return Files.readAllLines(this.file.toPath(), Charset.defaultCharset());
 	}
 
 	public Character getSeparator() {
@@ -75,31 +74,30 @@ public class GeneratorImpl implements Generator {
 	}
 
 	@Override
-	public List<Animal> generateAnimals() throws NumberFormatException, IOException, ParseException {
-		String file = GeneratorImpl.class.getResource("/datos_animales.txt").getFile();
+	public List<Animal> generateAnimals(int size) {
+		String file = "./datos_animales.txt";
 		List<Animal> animals = new ArrayList<Animal>();
-
-		FileWriter fw = null;
-		BufferedWriter bw = null;
+		BufferedWriter writer = null;
 		try {
-			fw = new FileWriter(file);
-			bw = new BufferedWriter(fw);
+			writer = Files.newBufferedWriter(Paths.get(file), Charset.defaultCharset());
+			int counter = 0;
+			while (counter < size) {
+				Animal animal = AnimalFactory.createAnimal(GeneratorInformation.getRandomName(),
+						GeneratorInformation.getRandomSpecies(), GeneratorInformation.getRandomAge(),
+						GeneratorInformation.getRandomFood(), GeneratorInformation.getRandomPills(),
+						GeneratorInformation.getRandomCondition());
 
-			Animal animal = AnimalFactory.createAnimal(GeneratorInformation.getRandomName(),
-					GeneratorInformation.getRandomSpecies(), GeneratorInformation.getRandomAge(),
-					GeneratorInformation.getRandomFood(), GeneratorInformation.getRandomPills(),
-					GeneratorInformation.getRandomCondition());
-
-			animals.add(animal);
-			fw.write(animal.printAnimal(this.separator));
-			return animals;
-
-		} catch (IOException e) {
-			e.printStackTrace();
+				animals.add(animal);
+				writer.write(animal.printAnimal(this.separator));
+				writer.write('\n');
+				counter++;
+			}
+		} catch (Exception e) {
+			System.err.println("There was an error generating the animals " + e.getMessage());
 		} finally {
 
 			try {
-				bw.close();
+				writer.close();
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

@@ -9,7 +9,7 @@ import com.poloit.animal.Animal;
 
 public interface Generator {
 
-	List<Animal> generateAnimals() throws NumberFormatException, IOException, ParseException;
+	List<Animal> generateAnimals(int size);
 
 	List<Animal> recoverAnimals(File file, Character separator)
 			throws NumberFormatException, IOException, ParseException;

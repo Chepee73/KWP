@@ -1,5 +1,7 @@
 package com.poloit.animal;
 
+import org.apache.commons.lang3.time.DateFormatUtils;
+
 import com.poloit.generator.model.Food;
 
 /**
@@ -49,7 +51,7 @@ public abstract class Animal {
 		builder.append('|');
 		builder.append(this.food.getDescription());
 		builder.append('|');
-		builder.append(this.food.getFoodTime());
+		builder.append(DateFormatUtils.format(this.food.getFoodTime(), "HH:mm"));
 		builder.append('|');
 
 		return builder.toString();

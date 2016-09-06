@@ -21,8 +21,8 @@ public class GeneratorImplTest {
 		Character separator = '|';
 		Generator generator = new GeneratorImpl(separator, file);
 
-		List<Animal> animals = generator.generateAnimals();
-		Assert.assertEquals("Pepito", animals.get(0).getName());
+		List<Animal> animals = generator.generateAnimals(1000);
+		Assert.assertEquals(animals.size(),100);
 
 	}
 
