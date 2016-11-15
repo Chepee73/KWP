@@ -47,9 +47,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 <!-- banner -->
 	<div class="banner">
+	<!-- navigation bar -->
 		<div class="header">
 			<div class="container">
-				<nav class="navbar navbar-default">
+				<nav class="navbar navbar-default" style="background-color:rgb(200,0,0)" height="200">
 					<div class="navbar-header navbar-left">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 							<span class="sr-only">Toggle navigation</span>
@@ -57,7 +58,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<h1><a class="navbar-brand" href="index.html"><span>T</span>eaching</a></h1>
+						<h1>					
+							<a class="navbar-brand" href="home.html">
+							<span style="background-image: url(images/title_bg.jpg);background-size: cover; position: relative;">
+								<img src="C:\Users\arsenicCatnip\Desktop\logo especialidad.png" height="75" width="100" ></img>
+								<i>Computación</i>
+								</span>
+							</a>
+						</h1>
 					</div>
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
@@ -66,27 +74,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<ul class="agileinfo_social_icons1">
 									<li><a href="#" class="facebook"></a></li>
 									<li><a href="#" class="twitter"></a></li>
-									<li><a href="#" class="google"></a></li>
-									<li><a href="#" class="pinterest"></a></li>
 								</ul>
 							</div>
 							<ul class="nav navbar-nav">
-								<li class="active"><a href="index.html">Home</a></li>
-								<li><a href="services.html" class="hvr-bounce-to-bottom">Services</a></li>
-								<li><a href="portfolio.html" class="hvr-bounce-to-bottom">Portfolio</a></li>
-								<li><a href="short-codes.html" class="hvr-bounce-to-bottom">Short Codes</a></li>
-								<li><a href="mail.html" class="hvr-bounce-to-bottom">Mail Us</a></li>
-							</ul>
-							<div class="clearfix"> </div>
+								<li class="active"><a href="login.html">Log in</a></li>
+								<li><a href="home.html" class="hvr-bounce-to-bottom">Home</a></li>
+								<li><a href="curricula.html" class="hvr-bounce-to-bottom">Curricula</a></li>
+								<li><a href="galeria.html" class="hvr-bounce-to-bottom">Galeria</a></li>
+								<li><a href="contactos.html" class="hvr-bounce-to-bottom">Contactos</a></li>
+								<li><a href="acercade.html" class="hvr-bounce-to-bottom">Acerca de...</a></li>								
+							</ul>	
 						</nav>
 					</div>
 				</nav>	
 			</div>
 		</div>
+		<!-- //navigation bar -->
 		<div class="w3agile_banner_info">
 			<div class="container">
-				<h3>teaching</h3>
-				<a href="http://w3layouts.com">powered by w3layouts.com</a>
+				<h3 style="color:rgb(0,0,0); background-color: rgba(255,255,255,0.6)" >computacion</h3>
+				<br>
+				<h1 style="color:rgb(255,255,255); text-align:center"><i>"blahblahblahblahblahblahblahblahblahblahblahblah".
 			</div>
 		</div>
 		<div class="w3_scroll">
@@ -94,17 +102,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			  <span class="dot"> </span>
 			</div>
 		</div>
-		<div class="w3_banner_pos">
-			<img src="images/1.png" alt=" " class="img-responsive animated wow slideInUp" data-wow-delay=".1ms" />
-		</div>
+		<div class="w3_banner_pos"></div>
 	</div>
 <!-- //banner -->
 <!-- banner-bottom -->
 	<div id="about" class="banner-bottom">
 		<div class="container">
-			<h3 class="head">A<span>brief description <i>about</i> teaching</span></h3>
+			<h3 class="head">Una<span>pequeña introducción <i>sobre</i> computación</span></h3>
 			<div class="agileits_banner_bottom_grids">
-				<div class="col-md-6 agileits_banner_bottom_grid_l">
+				<div class="col-md-6 agileits_banner_bottom_grid_l" style="background-color: rgb(255,230,230)">
 					<h4>Aliquam a nunc non erat lobortis</h4>
 					<p><i>Vestibulum nec consequat nisl. Aliquam vehicula egestas commodo. 
 						Pellentesque lorem magna, pulvinar sed lacinia et, venenatis in mi.</i>Nullam sodales rutrum nisl, gravida porttitor lectus porta et. 
@@ -147,10 +153,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="clearfix"> </div>
 	</div>
 <!-- //banner-bottom1 -->
-<!-- testimonials -->
+
+ <!-- testimonials -->
 	<div class="testimonials">
 		<div class="container">
-			<h3 class="head head1">C<span>our <i>clients</i> says</span></h3>
+			<h3 class="head head1">Testimonios<span>Nuestros<i>alumnos</i> dicen</span></h3>
 			<ul id="flexiselDemo1">			
 				<li>
 					<div class="wthree_testimonials_grid_main">
@@ -235,28 +242,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 <!-- //testimonials -->
-<!-- newsletter -->
-	<div class="newsletter">
-		<div class="container">
-			<div class="col-md-7 w3ls_newsletter_left">
-				<h3>N<span>Subscribe to our newsletter</span></h3>
-				<p>Suspendisse lacinia rutrum tincidunt.</p>
-			</div>
-			<div class="col-md-5 w3ls_newsletter_right">
-				<form action="#" method="post">
-					<input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-					<input type="submit" value=" ">
-				</form>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-<!-- //newsletter -->
+
 <!-- footer -->
 	<div class="footer">
 		<div class="container">
 			<div class="col-md-4 w3l_footer_grid">
-				<h2><a href="index.html"><span>T</span>eaching</a></h2>
+				<h2><a href="home.html"><span>C</span>omputación</a></h2>
 				<p>Vestibulum sed convallis massa, eu aliquet massa. Suspendisse 
 					lacinia rutrum tincidunt. Integer id erat porta, convallis tortor a, 
 					ullamcorper magna.</p>
@@ -264,30 +255,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-3 w3l_footer_grid">
 				<h3>Address</h3>
 				<ul class="w3_address">
-					<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>1234k Avenue, 4th block, <span>New York City.</span></li>
+					<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Paseo Colón, 650<span>C.A.B.A</span></li>
 					<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
 					<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
 				</ul>
 			</div>
-			<div class="col-md-2 w3l_footer_grid">
-				<h3>Navigation</h3>
-				<ul class="agileinfo_footer_grid_nav">
-					<li><a href="services.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Services</a></li>
-					<li><a href="portfolio.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Portfolio</a></li>
-					<li><a href="short-codes.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Short Codes</a></li>
-					<li><a href="mail.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Mail Us</a></li>
-				</ul>
-			</div>
-			<div class="col-md-3 w3l_footer_grid">
-				<h3>Social Media</h3>
-				<ul class="agileinfo_social_icons1 agileinfo_social">
-					<li><a href="#" class="facebook"></a></li>
-					<li><a href="#" class="twitter"></a></li>
-					<li><a href="#" class="google"></a></li>
-					<li><a href="#" class="pinterest"></a></li>
-				</ul>
-			</div>
-			<div class="clearfix"> </div>
+			<div>
+					<img src="images/3.jpg" alt=" " class="img-responsive" style="width: 420px" ><img>
+			</div>	
 			<div class="w3agile_footer_copy">
 				<p>© 2016 Teaching. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
 			</div>

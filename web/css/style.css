@@ -32,15 +32,235 @@ input[type="submit"],input[type="reset"],.agileits_mail_grid_lft_grid1 ul li a,.
 	-o-transition: .5s ease-in;
 	-ms-transition: .5s ease-in;
 }
+
+/*-- stuff I added, also changed some other properties--*/
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+html{    background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat;
+  background-size: cover;
+  height:100%;
+}
+
+#feedback-page{
+	text-align:center;
+}
+
+#form-main{
+	width:100%;
+	float:left;
+	position: relative;
+}
+
+#form-div-login {
+	background-color:rgba(255,72,72,0.4);
+	padding-left:35px;
+	padding-right:35px;
+	padding-bottom:50px;
+	width: 450px;
+	float: left;
+	left: 50%;
+	position: absolute;
+	margin-top:-100px;
+	margin-left: -260px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+#form-div-contacto {
+	background-color:rgba(255,72,72,0.4);
+	padding-left:35px;
+	padding-right:35px;
+	padding-bottom:50px;
+	width: 450px;
+	float: left;
+	left: 50%;
+	position: absolute;
+	margin-top:30px;
+	margin-left: -260px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+	color:#3c3c3c;
+	font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #3498db;
+	color: #3498db;
+	outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+
+/* Icons ---------------------------------- */
+
+#username{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#username:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#name{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#password{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#password:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#name:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#comment{
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+#button-blue{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float:left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: #3498db;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: #0493bd;
+}
+	
+.submit:hover {
+	color: #3498db;
+}
+	
+.ease {
+	width: 0px;
+	height: 74px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+@media only screen and (max-width: 580px) {
+	#form-div{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+
+.title{
+	background-image: url(images/title_bg.jpg);
+	background-size: cover;
+	position: relative;
+}
+
 /*-- banner --*/
 .banner{
+	height: 75%;
 	background:url(../images/banner.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	-ms-background-size:cover;
-	min-height:800px;
 	position:relative;
 }
 .banner1{
@@ -51,6 +271,17 @@ input[type="submit"],input[type="reset"],.agileits_mail_grid_lft_grid1 ul li a,.
 	-o-background-size:cover;
 	-ms-background-size:cover;
 	min-height:300px;
+	position:relative;
+}
+
+.banner-login-contacto{
+	background:url(../images/banner.jpg) no-repeat 0px 0px;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+	min-height:750px;
 	position:relative;
 }
 .w3_banner_pos{
@@ -158,7 +389,7 @@ input[type="submit"],input[type="reset"],.agileits_mail_grid_lft_grid1 ul li a,.
 	font-size: 5em;
 }
 .w3agile_banner_info a{
-	color:#FFD900;
+	color:rgb(255,0,0);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
@@ -219,9 +450,10 @@ input[type="submit"],input[type="reset"],.agileits_mail_grid_lft_grid1 ul li a,.
 .w3_scroll {
     text-align: center;
 }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus 
+{
     color: #212121;
-    background-color: #FFD900;
+    background-color: rgb(255,225,0);
 }
 /* Bounce To Bottom */
 .hvr-bounce-to-bottom {
@@ -247,7 +479,7 @@ input[type="submit"],input[type="reset"],.agileits_mail_grid_lft_grid1 ul li a,.
   left: 0;
   right: 0;
   bottom: 0;
-  background:#FFD900;
+  background:rgb(255,0,0);
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50% 0;
@@ -317,7 +549,7 @@ input[type="submit"],input[type="reset"],.agileits_mail_grid_lft_grid1 ul li a,.
 .agileits_banner_bottom_grid_l p i{
 	display:block;
 	margin-bottom:1em;
-	color:#FFD900;
+	color:rgb(255,0,0);
 }
 .agileits_banner_bottom_grids{
 	margin:6em 0 0;
@@ -353,7 +585,7 @@ input[type="submit"],input[type="reset"],.agileits_mail_grid_lft_grid1 ul li a,.
 .agile_banner_bottom1_right h4{
 	text-transform:capitalize;
 	font-size:1.8em;
-	color:#FFD900;
+	color:rgb(255,0,0);
 }
 .agile_banner_bottom1_right p{
 	margin:1em 0 3em;
@@ -367,7 +599,7 @@ input[type="submit"],input[type="reset"],.agileits_mail_grid_lft_grid1 ul li a,.
 	text-transform:uppercase;
 }
 .agile_banner_bottom1_right ul li span{
-	color:#FFD900;
+	color:rgb(255,0,0);
 	padding-right:2em;
 }
 .agile_banner_bottom1_right ul li:last-child{
@@ -376,7 +608,6 @@ input[type="submit"],input[type="reset"],.agileits_mail_grid_lft_grid1 ul li a,.
 .wthree_testimonials_grid{
 	position: relative;
     margin: 6em auto 0;
-    background:#EDEDED;
     padding:6em 5em 3em;
 }
 .wthree_testimonials_grid1,.wthree_testimonials_grid{
@@ -499,7 +730,7 @@ input[type="submit"],input[type="reset"],.agileits_mail_grid_lft_grid1 ul li a,.
     position: absolute;
     left: 5%;
     top: 30%;
-    color: #FFD900;
+    color: rgb(255,0,0);
     font-size: .5em;
     text-transform: capitalize;
     font-family: 'Capriola', sans-serif;
@@ -536,6 +767,9 @@ input[type="submit"],input[type="reset"],.agileits_mail_grid_lft_grid1 ul li a,.
 .footer{
 	padding:4em 0;
 	background:#212121;
+ }
+.footer_image{
+	width: 420px;
 }
 .w3l_footer_grid h2 a{
 	font-size:1.1em;
@@ -545,7 +779,7 @@ input[type="submit"],input[type="reset"],.agileits_mail_grid_lft_grid1 ul li a,.
 .w3l_footer_grid h2 a span{
 	display: inline-block;
     padding: .3em .5em;
-    background: #FFD900;
+    background: rgb(255,0,0);
     color: #212121;
 }
 .w3l_footer_grid p{
@@ -585,7 +819,7 @@ ul.w3_address li a:hover, .agileinfo_footer_grid_nav li a:hover {
     text-decoration: none;
 }
 ul.agileinfo_footer_grid_nav li a span {
-    color: #FFD900;
+    color: rgb(255,0,0);
     padding-right: 1.5em;
 }
 .w3agile_footer_copy {
@@ -698,7 +932,7 @@ ul.agileinfo_footer_grid_nav li a span {
     color:#FF0000;
 }
 .agileinfo_services_grid1:hover h4{
-	color:#FFD900;
+	color:rgb(255,0,0);
 }
 .agileinfo_services_grid1 p{
 	color:#999;
@@ -726,7 +960,7 @@ ul.agileinfo_footer_grid_nav li a span {
 .w3agile_services_bottom_grid h3{
 	font-size: 1.4em;
     line-height: 1.5em;
-    color:#FFD900;
+    color:rgb(255,0,0);
     text-transform: capitalize;
 }
 .w3agile_services_bottom_grid p{
@@ -1119,7 +1353,7 @@ h2.typoh2{
 .agileits_mail_grid_right1 input[type="submit"]{
 	outline: none;
     width: 35%;
-    background: #FFD900;
+    background: rgb(255,0,0);
     color: #212121;
     padding: 10px 0;
     font-size: 1em;
