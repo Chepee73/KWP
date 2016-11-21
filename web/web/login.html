@@ -98,7 +98,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div id="form-div-login">
 						<h1 style="color:rgb(255,255,255); text-align:center" >Iniciar Sesión</h1>
 						<br>
-							<form class="form" id="form1">				  
+							<form class="form" id="form1" method="POST" action="http://127.0.0.1:8080">				  
 							  <p class="username">
 								<input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Username" id="username" />
 								
@@ -108,19 +108,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							  
 							  </script>
 							  <p class="password">
-								<input type="password" name="password" type="text" class="validate[required,custom[password]] feedback-input" id="password" placeholder="Password" />
+								<input type="password" name="password" type="text" class="validate[required,custom[password]] feedback-input" placeholder="Password" id="password" />
+								
 							  </p>			  
 				  
 								<div class="login">
-									<input type="submit" value="LOG IN" id="button-blue"/>
-									<script>
-									var dataUser = getElementById("username");
-									button-blue.onclick = function()
-									{
-									alert(dataUser);
-									}
-									
-									</script>
+									<input type="submit" value="LOG IN" id="button-blue" onclick='alert(TextNameUser);'/>
 										<div class="ease"></div>
 								</div>
 							</form>
