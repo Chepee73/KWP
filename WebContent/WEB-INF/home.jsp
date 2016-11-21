@@ -5,7 +5,9 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE html>
+
 <html>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <head>
 <title>Teaching an Education School Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
 <!-- for-mobile-apps -->
