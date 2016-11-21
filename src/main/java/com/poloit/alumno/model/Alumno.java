@@ -10,9 +10,18 @@ public class Alumno {
 	private int legajo;
 	private String email;
 	
-	public Alumno(int int1, String string, String string2, int int2, int int3, String string3) {
-		// TODO Auto-generated constructor stub
+	
+	public Alumno(){}
+	public Alumno(int alumID, String nombre, String ape, int DNI, int legajo, String email) {
+		this.alumID = alumID;
+		this.Nombre = nombre;
+		this.Apellido = ape;
+		this.DNI = DNI;
+		this.legajo = legajo;
+		this.email = email;
+		
 	}
+	
 	public int getAlumID() {
 		return alumID;
 	}
