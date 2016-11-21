@@ -126,7 +126,7 @@ html{    background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat
 	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
 	background-size: 30px 30px;
 	background-position: 8px 5px;
-  background-position: 11px 8px;
+	background-position: 11px 8px;
 	background-repeat: no-repeat;
 }
 
@@ -138,16 +138,16 @@ html{    background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat
 }
 
 #password{
-	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-image: url(https://www.etfg.com/img/lock.png);
 	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
 }
 
 #password:focus{
-	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-image: url(https://www.etfg.com/img/lock.png);
 	background-size: 30px 30px;
-  background-position: 11px 8px;
+	background-position: 11px 8px;
 	background-repeat: no-repeat;
 }
 

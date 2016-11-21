@@ -61,7 +61,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h1>					
 							<a class="navbar-brand" href="home.html">
 							<span style="background-image: url(images/title_bg.jpg);background-size: cover; position: relative;">
-								<img src="C:\Users\arsenicCatnip\Desktop\logo especialidad.png" height="75" width="100" ></img>
+								<img src="images/logo_especialidad.png" height="75" width="100" ></img>
 								<i>Computación</i>
 								</span>
 							</a>
@@ -91,22 +91,36 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<!-- //navigation bar -->
 		<div class="w3agile_banner_info" style="position: center">
+		<br>
+		<br>
 				<!-- formulario -->
 					<div id="form-main">
 						<div id="form-div-login">
-						<h1 style="color:rgb(255,255,255); text-align:center" >Inicia Sesión</h1>
+						<h1 style="color:rgb(255,255,255); text-align:center" >Iniciar Sesión</h1>
 						<br>
 							<form class="form" id="form1">				  
 							  <p class="username">
 								<input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Username" id="username" />
+								
 							  </p>
+							  <script>
 							  
+							  
+							  </script>
 							  <p class="password">
-								<input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="password" placeholder="Password" />
+								<input type="password" name="password" type="text" class="validate[required,custom[password]] feedback-input" id="password" placeholder="Password" />
 							  </p>			  
 				  
 								<div class="login">
 									<input type="submit" value="LOG IN" id="button-blue"/>
+									<script>
+									var dataUser = getElementById("username");
+									button-blue.onclick = function()
+									{
+									alert(dataUser);
+									}
+									
+									</script>
 										<div class="ease"></div>
 								</div>
 							</form>
