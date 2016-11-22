@@ -5,9 +5,9 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE html>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 
 <html>
-<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <head>
 <title>Teaching an Education School Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
 <!-- for-mobile-apps -->
@@ -79,12 +79,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</ul>
 							</div>
 							<ul class="nav navbar-nav">
+								
 								<li class="active"><a href="login.html">Log in</a></li>
 								<li><a href="home.html" class="hvr-bounce-to-bottom">Home</a></li>
 								<li><a href="curricula.html" class="hvr-bounce-to-bottom">Curricula</a></li>
 								<li><a href="galeria.html" class="hvr-bounce-to-bottom">Galeria</a></li>
 								<li><a href="contactos.html" class="hvr-bounce-to-bottom">Contactos</a></li>
-								<li><a href="acercade.html" class="hvr-bounce-to-bottom">Acerca de...</a></li>								
+								<!--  <li><a href="acercade.html" class="hvr-bounce-to-bottom">Acerca de...</a></li> -->	
+								<form:form method="GET" action="/002/AcercaDe">
+									<table>
+									 <tr>
+  								     <td>
+									    <input type="submit" value="Acerca de..."/>
+									</td>
+    								</tr>
+									</table>  
+								</form:form>							
 							</ul>	
 						</nav>
 					</div>
