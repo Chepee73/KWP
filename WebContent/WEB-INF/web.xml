@@ -16,7 +16,7 @@
    </servlet> 
    
    <welcome-file-list> 
-   <welcome-file>/pages/home.jsp</welcome-file>
+   <welcome-file>/jsp/home.jsp</welcome-file>
     </welcome-file-list>
    
    <servlet-mapping>

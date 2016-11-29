@@ -25,12 +25,12 @@ public class AlumnoController {
 	    
 		 @RequestMapping(value = "/home", method = RequestMethod.GET)
 		   public String home() {
-			   return "redirect:/WEB-INF/pages/home.jsp";
+			   return "redirect:home.jsp";
 		   }
 		   
 		   @RequestMapping(value = "/AcercaDe", method = RequestMethod.GET)
 		   public String redirect()
 		   {  
-		      return "redirect:/WEB-INF/pages/acercade.jsp";
+		      return "redirect:acercade.jsp";
 		   }
 }

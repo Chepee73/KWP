@@ -1,10 +1,6 @@
-<!--
-author: W3layouts
-author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+
 <!DOCTYPE html>
+
 <html>
 <head>
 <title>Teaching an Education School Category Flat Bootstrap Responsive Website Template | Portfolio :: w3layouts</title>
@@ -16,9 +12,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/imagehover.css" rel="stylesheet" media="all">
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/imagehover.css" rel="stylesheet" media="all">
 <link type="text/css" rel="stylesheet" href="css/cm-overlay.css" />
 <!-- js -->
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
@@ -90,13 +86,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- portfolio -->
 	<div class="portfolio">
 		<div class="container">
-			<h3 class="head head2">Galeria<span>Nuestra <i>colección</i> de proyectos</span></h3>
-			<br>
-			<br>
+			<h3 class="head head2">Curricula<span>Nuestro <i>programa</i> de educación.</span></h3>
                 <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">	
 					<ul id="myTab" class="nav nav-tabs" role="tablist" style="text_align:center">
-						<li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Fotos</a></li>
-						<li role="presentation"><a href="#learning" role="tab" id="learning-tab" data-toggle="tab" aria-controls="learning">Videos</a></li>
+						<li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">1° Año</a></li>
+						<li role="presentation"><a href="#learning" role="tab" id="learning-tab" data-toggle="tab" aria-controls="learning">2° Año</a></li>						
+						<li role="presentation"><a href="#playing" role="tab" id="playing-tab" data-toggle="tab" aria-controls="playing">3° Año</a></li>
+						<li role="presentation"><a href="#painting" role="tab" id="painting-tab" data-toggle="tab" aria-controls="painting">4° Año</a></li>
 					</ul>
 					<div id="myTabContent" class="tab-content">
 						<div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
@@ -359,7 +355,94 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 			
-  
+   <!-- testimonials -->
+	<div class="testimonials">
+		<div class="container">
+			<h3 class="head head1">Testimonios<span>Nuestros<i>alumnos</i> dicen</span></h3>
+			<ul id="flexiselDemo1">			
+				<li>
+					<div class="wthree_testimonials_grid_main">
+						<div class="wthree_testimonials_grid">
+							<h4>Suspendisse sagittis nibh sit amet nisi imperdiet</h4>
+							<p>Donec laoreet eu purus eu viverra. Vestibulum sed convallis massa,
+								eu aliquet massa. Suspendisse lacinia rutrum tincidunt. Integer id erat porta, 
+								convallis tortor a, ullamcorper magna.</p>
+							<div class="wthree_testimonials_grid_pos">
+								<img src="images/2.png" alt=" " class="img-responsive" />
+							</div>
+						</div>
+						<div class="wthree_testimonials_grid1">
+							<h5>Mark Henry</h5>
+							<p>Teacher</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="wthree_testimonials_grid_main">
+						<div class="wthree_testimonials_grid">
+							<h4>Vestibulum sed convallis massa tincidunt</h4>
+							<p>Donec laoreet eu purus eu viverra. Vestibulum sed convallis massa,
+								eu aliquet massa. Suspendisse lacinia rutrum tincidunt. Integer id erat porta, 
+								convallis tortor a, ullamcorper magna.</p>
+							<div class="wthree_testimonials_grid_pos">
+								<img src="images/4.png" alt=" " class="img-responsive" />
+							</div>
+						</div>
+						<div class="wthree_testimonials_grid1">
+							<h5>Linda Carl</h5>
+							<p>Teacher</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="wthree_testimonials_grid_main">
+						<div class="wthree_testimonials_grid">
+							<h4>Integer id erat porta convallis tortor</h4>
+							<p>Donec laoreet eu purus eu viverra. Vestibulum sed convallis massa,
+								eu aliquet massa. Suspendisse lacinia rutrum tincidunt. Integer id erat porta, 
+								convallis tortor a, ullamcorper magna.</p>
+							<div class="wthree_testimonials_grid_pos">
+								<img src="images/3.png" alt=" " class="img-responsive" />
+							</div>
+						</div>
+						<div class="wthree_testimonials_grid1">
+							<h5>Michael Paul</h5>
+							<p>Teacher</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+					<script type="text/javascript">
+							$(window).load(function() {
+								$("#flexiselDemo1").flexisel({
+									visibleItems:1,
+									animationSpeed: 1000,
+									autoPlay: true,
+									autoPlaySpeed: 3000,    		
+									pauseOnHover: true,
+									enableResponsiveBreakpoints: true,
+									responsiveBreakpoints: { 
+										portrait: { 
+											changePoint:480,
+											visibleItems: 1
+										}, 
+										landscape: { 
+											changePoint:640,
+											visibleItems:1
+										},
+										tablet: { 
+											changePoint:768,
+											visibleItems: 1
+										}
+									}
+								});
+								
+							});
+					</script>
+					<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+		</div>
+	</div>
+<!-- //testimonials -->
 				<script src="js/jquery.tools.min.js"></script>
 				<script src="js/jquery.mobile.custom.min.js"></script>
 				<script src="js/jquery.cm-overlay.js"></script>

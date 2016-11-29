@@ -89,13 +89,13 @@
     <repositories>
         <repository>
             <id>spring-releases</id>
-            <url>C:\spring-1.4.1.RELEASE\lib</url>
+            <url>https://repo.spring.io/libs-release</url>
         </repository>
     </repositories>
     <pluginRepositories>
         <pluginRepository>
             <id>spring-releases</id>
-            <url>C:\spring-1.4.1.RELEASE\lib</url>
+            <url>https://repo.spring.io/libs-release</url>
         </pluginRepository>
     </pluginRepositories>
 </project>

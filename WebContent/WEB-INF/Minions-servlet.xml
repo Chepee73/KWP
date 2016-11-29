@@ -13,11 +13,11 @@
     <context:component-scan base-package="com.poloit.alumno.model" />
      
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-    <property name="prefix" value="/WEB-INF/pages/home.jsp/" />
+    <property name="prefix" value="home.jsp" />
     <property name="suffix" value=".jsp" />
     </bean>
     
-    <mvc:resources mapping="/pages/**" location="/WEB-INF/pages/" />
+    <mvc:resources mapping="jsp/**" location="/WEB-INF/jsp" />
     <mvc:annotation-driven/>
     
 </beans>
