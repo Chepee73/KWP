@@ -43,17 +43,19 @@ public class AlumnoQuerys implements AlumnoDAO {
 				+ "ON A.ID_Alumno = D.ID_Alumno"
 				+ "WHERE A.ID_Alumno = ?";
 		
+		String sql2 = "Select * FROM Alumno Where ID_Alumno = ?";
+
 		Connection conn = null; 
 		
 		try
 		{
 			conn = datasource.getConnection();
 			 
-			PreparedStatement ps = conn.prepareStatement(sql);
+			PreparedStatement ps = conn.prepareStatement(sql2);
 			ps.setInt(1, AlumID);
 			Alumno alumno = null;
 			ResultSet rs = ps.executeQuery();
-			/*if(rs.next())
+			if(rs.next())
 			{
 				alumno = new Alumno(
 						rs.getInt("Id_Alumno"),
@@ -63,7 +65,7 @@ public class AlumnoQuerys implements AlumnoDAO {
 						rs.getInt("Legajo"),
 						rs.getString("Email")
 						);
-			}*/
+			}
 			
 			rs.close();
 			ps.close();
