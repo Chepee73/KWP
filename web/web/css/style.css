@@ -263,6 +263,17 @@ input:focus, textarea:focus {
 	-ms-background-size:cover;
 	position:relative;
 }
+
+.banner2{
+	background:url(../images/banner.jpg) no-repeat 0px 0px;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+	min-height:750px;
+	position:relative;
+}
 .banner1{
 	background:url(../images/banner.jpg) no-repeat 0px 0px;
 	background-size:cover;
@@ -290,7 +301,7 @@ input:focus, textarea:focus {
 	right:20%;
 }
 .header {
-    background: rgba(0, 0, 0, 0.63);
+    background: rgb(200, 0, 0);
 }
 .navbar {
     margin-bottom: 0;
@@ -454,6 +465,7 @@ input:focus, textarea:focus {
 {
     color: #212121;
     background-color: rgb(255,225,0);
+	width:100%;
 }
 /* Bounce To Bottom */
 .hvr-bounce-to-bottom {
@@ -1404,7 +1416,6 @@ h2.typoh2{
 }
 @media (max-width:1080px){
 	.navbar-nav > li > a {
-		padding: 24px 17px;
 	}
 	.agileinfo_social_icons {
 		margin: 0.9em 0 0 3em;
