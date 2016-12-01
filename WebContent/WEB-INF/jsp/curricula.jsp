@@ -1,6 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
 <html>
 <head>
 <title>Teaching an Education School Category Flat Bootstrap Responsive Website Template | Portfolio :: w3layouts</title>
@@ -12,9 +16,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
-<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link href="../css/imagehover.css" rel="stylesheet" media="all">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/imagehover.css" rel="stylesheet" media="all">
 <link type="text/css" rel="stylesheet" href="css/cm-overlay.css" />
 <!-- js -->
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
@@ -50,10 +54,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<span class="icon-bar"></span>
 						</button>
 						<h1>					
-							<a class="navbar-brand" href="home.html">
+							<a class="navbar-brand" href="home.jsp">
 							<span style="background-image: url(images/title_bg.jpg);background-size: cover; position: relative;">
 								<img src="C:\Users\arsenicCatnip\Desktop\logo especialidad.png" height="75" width="100" ></img>
-								<i>ComputaciÃ³n</i>
+								<i>Computación</i>
 								</span>
 							</a>
 						</h1>
@@ -68,12 +72,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</ul>
 							</div>
 							<ul class="nav navbar-nav">
-								<li class="active"><a href="login.html">Log in</a></li>
-								<li><a href="home.html" class="hvr-bounce-to-bottom">Home</a></li>
-								<li><a href="curricula.html" class="hvr-bounce-to-bottom">Curricula</a></li>
-								<li><a href="galeria.html" class="hvr-bounce-to-bottom">Galeria</a></li>
-								<li><a href="contactos.html" class="hvr-bounce-to-bottom">Contactos</a></li>
-								<li><a href="acercade.html" class="hvr-bounce-to-bottom">Acerca de...</a></li>									
+								<li class="active"><a href="login.jsp">Log in</a></li>
+								<li><a href="home.jsp" class="hvr-bounce-to-bottom">Home</a></li>
+								<li><a href="curricula.jsp" class="hvr-bounce-to-bottom">Curricula</a></li>
+								<li><a href="galeria.jsp" class="hvr-bounce-to-bottom">Galeria</a></li>
+								<li><a href="contactos.jsp" class="hvr-bounce-to-bottom">Contactos</a></li>
+								<li><a href="acercade.jsp" class="hvr-bounce-to-bottom">Acerca de...</a></li>									
 							</ul>	
 						</nav>
 					</div>
@@ -86,13 +90,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- portfolio -->
 	<div class="portfolio">
 		<div class="container">
-			<h3 class="head head2">Galeria<span>Nuestra <i>colecciÃ³n</i> de proyectos</span></h3>
-			<br>
-			<br>
+			<h3 class="head head2">Curricula<span>Nuestro <i>programa</i> de educación.</span></h3>
                 <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">	
 					<ul id="myTab" class="nav nav-tabs" role="tablist" style="text_align:center">
-						<li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Fotos</a></li>
-						<li role="presentation"><a href="#learning" role="tab" id="learning-tab" data-toggle="tab" aria-controls="learning">Videos</a></li>
+						<li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">1° Año</a></li>
+						<li role="presentation"><a href="#learning" role="tab" id="learning-tab" data-toggle="tab" aria-controls="learning">2° Año</a></li>						
+						<li role="presentation"><a href="#playing" role="tab" id="playing-tab" data-toggle="tab" aria-controls="playing">3° Año</a></li>
+						<li role="presentation"><a href="#painting" role="tab" id="painting-tab" data-toggle="tab" aria-controls="painting">4° Año</a></li>
 					</ul>
 					<div id="myTabContent" class="tab-content">
 						<div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
@@ -355,7 +359,94 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 			
-  
+   <!-- testimonials -->
+	<div class="testimonials">
+		<div class="container">
+			<h3 class="head head1">Testimonios<span>Nuestros<i>alumnos</i> dicen</span></h3>
+			<ul id="flexiselDemo1">			
+				<li>
+					<div class="wthree_testimonials_grid_main">
+						<div class="wthree_testimonials_grid">
+							<h4>Suspendisse sagittis nibh sit amet nisi imperdiet</h4>
+							<p>Donec laoreet eu purus eu viverra. Vestibulum sed convallis massa,
+								eu aliquet massa. Suspendisse lacinia rutrum tincidunt. Integer id erat porta, 
+								convallis tortor a, ullamcorper magna.</p>
+							<div class="wthree_testimonials_grid_pos">
+								<img src="images/2.png" alt=" " class="img-responsive" />
+							</div>
+						</div>
+						<div class="wthree_testimonials_grid1">
+							<h5>Mark Henry</h5>
+							<p>Teacher</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="wthree_testimonials_grid_main">
+						<div class="wthree_testimonials_grid">
+							<h4>Vestibulum sed convallis massa tincidunt</h4>
+							<p>Donec laoreet eu purus eu viverra. Vestibulum sed convallis massa,
+								eu aliquet massa. Suspendisse lacinia rutrum tincidunt. Integer id erat porta, 
+								convallis tortor a, ullamcorper magna.</p>
+							<div class="wthree_testimonials_grid_pos">
+								<img src="images/4.png" alt=" " class="img-responsive" />
+							</div>
+						</div>
+						<div class="wthree_testimonials_grid1">
+							<h5>Linda Carl</h5>
+							<p>Teacher</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="wthree_testimonials_grid_main">
+						<div class="wthree_testimonials_grid">
+							<h4>Integer id erat porta convallis tortor</h4>
+							<p>Donec laoreet eu purus eu viverra. Vestibulum sed convallis massa,
+								eu aliquet massa. Suspendisse lacinia rutrum tincidunt. Integer id erat porta, 
+								convallis tortor a, ullamcorper magna.</p>
+							<div class="wthree_testimonials_grid_pos">
+								<img src="images/3.png" alt=" " class="img-responsive" />
+							</div>
+						</div>
+						<div class="wthree_testimonials_grid1">
+							<h5>Michael Paul</h5>
+							<p>Teacher</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+					<script type="text/javascript">
+							$(window).load(function() {
+								$("#flexiselDemo1").flexisel({
+									visibleItems:1,
+									animationSpeed: 1000,
+									autoPlay: true,
+									autoPlaySpeed: 3000,    		
+									pauseOnHover: true,
+									enableResponsiveBreakpoints: true,
+									responsiveBreakpoints: { 
+										portrait: { 
+											changePoint:480,
+											visibleItems: 1
+										}, 
+										landscape: { 
+											changePoint:640,
+											visibleItems:1
+										},
+										tablet: { 
+											changePoint:768,
+											visibleItems: 1
+										}
+									}
+								});
+								
+							});
+					</script>
+					<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+		</div>
+	</div>
+<!-- //testimonials -->
 				<script src="js/jquery.tools.min.js"></script>
 				<script src="js/jquery.mobile.custom.min.js"></script>
 				<script src="js/jquery.cm-overlay.js"></script>
@@ -370,7 +461,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="footer">
 		<div class="container">
 			<div class="col-md-4 w3l_footer_grid">
-				<h2><a href="home.html"><span>C</span>omputaciÃ³n</a></h2>
+				<h2><a href="home.jsp"><span>C</span>omputación</a></h2>
 				<p>Vestibulum sed convallis massa, eu aliquet massa. Suspendisse 
 					lacinia rutrum tincidunt. Integer id erat porta, convallis tortor a, 
 					ullamcorper magna.</p>
@@ -378,7 +469,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-3 w3l_footer_grid">
 				<h3>Address</h3>
 				<ul class="w3_address">
-					<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Paseo ColÃ³n, 650<span>C.A.B.A</span></li>
+					<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Paseo Colón, 650<span>C.A.B.A</span></li>
 					<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
 					<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
 				</ul>
@@ -387,7 +478,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<img src="images/3.jpg" alt=" " class="img-responsive" style="width: 420px" ><img>
 			</div>	
 			<div class="w3agile_footer_copy">
-				<p>Â© 2016 Teaching. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+				<p>© 2016 Teaching. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
 			</div>
 		</div>
 	</div>

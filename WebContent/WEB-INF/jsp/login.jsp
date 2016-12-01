@@ -59,7 +59,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<span class="icon-bar"></span>
 						</button>
 						<h1>					
-							<a class="navbar-brand" href="home.html">
+							<a class="navbar-brand" href="home.jsp">
 							<span style="background-image: url(images/title_bg.jpg);background-size: cover; position: relative;">
 								<img src="C:\Users\arsenicCatnip\Desktop\logo especialidad.png" height="75" width="100" ></img>
 								<i>Computación</i>
@@ -77,12 +77,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</ul>
 							</div>
 							<ul class="nav navbar-nav">
-								<li class="active"><a href="login.html">Log in</a></li>
-								<li><a href="home.html" class="hvr-bounce-to-bottom">Home</a></li>
-								<li><a href="curricula.html" class="hvr-bounce-to-bottom">Curricula</a></li>
-								<li><a href="galeria.html" class="hvr-bounce-to-bottom">Galeria</a></li>
-								<li><a href="contactos.html" class="hvr-bounce-to-bottom">Contactos</a></li>
-								<li><a href="acercade.html" class="hvr-bounce-to-bottom">Acerca de...</a></li>								
+								<li class="active"><a href="login.jsp">Log in</a></li>
+								<li><a href="home.jsp" class="hvr-bounce-to-bottom">Home</a></li>
+								<li><a href="curricula.jsp" class="hvr-bounce-to-bottom">Curricula</a></li>
+								<li><a href="galeria.jsp" class="hvr-bounce-to-bottom">Galeria</a></li>
+								<li><a href="contactos.jsp" class="hvr-bounce-to-bottom">Contactos</a></li>
+								<li><a href="acercade.jsp" class="hvr-bounce-to-bottom">Acerca de...</a></li>								
 							</ul>	
 						</nav>
 					</div>
@@ -90,52 +90,38 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 		<!-- //navigation bar -->
-		<br>	
-		<br>
-		<div id="form-main">
-			  <div id="form-div-contacto">
-				<h1 style="color:rgb(255,255,255); text-align:center" >Comuníquese con nosotros!</h1>
-				<br>
-				<form class="form" id="form1">
+		<div class="w3agile_banner_info" style="position: center">
+				<!-- formulario -->
+					<div id="form-main">
+						<div id="form-div-login">
+						<h1 style="color:rgb(255,255,255); text-align:center" >Inicia Sesión</h1>
+						<br>
+							<form class="form" id="form1">				  
+							  <p class="username">
+								<input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Username" id="username" />
+							  </p>
+							  
+							  <p class="password">
+								<input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="password" placeholder="Password" />
+							  </p>			  
 				  
-				  <p class="name">
-					<input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
-				  </p>
-				  
-				  <p class="email">
-					<input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
-				  </p>
-				  
-				  <p class="text">
-					<textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
-				  </p>
-				  
-				  
-				  <div class="submit">
-					<input type="submit" value="SEND" id="button-blue"/>
-					<div class="ease"></div>
-				  </div>
-				</form>
-			  </div>
+								<div class="login">
+									<input type="submit" value="LOG IN" id="button-blue"/>
+										<div class="ease"></div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<br>			
 		</div>
-		<!-- <div class="w3agile_banner_info">
-			
-			<div class="w3_scroll">
-			
-				<div class="scroll-down">
-					<span class="dot"> </span>
-					
-				</div> 
-			</div>
-		</div>
-		<div class="w3_banner_pos"></div> -->
+				<!--//formulario-->
 	</div>
 <!-- //banner -->
 <!-- footer -->
 	<div class="footer">
 		<div class="container">
 			<div class="col-md-4 w3l_footer_grid">
-				<h2><a href="home.html"><span>C</span>omputación</a></h2>
+				<h2><a href="home.jsp"><span>C</span>omputación</a></h2>
 				<p>Vestibulum sed convallis massa, eu aliquet massa. Suspendisse 
 					lacinia rutrum tincidunt. Integer id erat porta, convallis tortor a, 
 					ullamcorper magna.</p>
