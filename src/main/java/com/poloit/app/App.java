@@ -1,16 +1,11 @@
 package com.poloit.app;
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-
-
-import com.poloit.alumno.model.Alumno;
-import com.poloit.alumno.model.AlumnoDAO;
 
 
 @Configuration
@@ -30,10 +25,10 @@ public class App {
 		System.out.println(bean);
 		}
 		
-		AlumnoDAO alumDAO = (AlumnoDAO) context.getBean("alumnoDAO");
-		Alumno alumno1 = alumDAO.findByAlumnoId(1);
+		//AlumnoDAO alumDAO = (AlumnoDAO) context.getBean("alumnoDAO");
+		//Alumno alumno1 = alumDAO.findByAlumnoId(1);
 		
-		System.out.println(alumno1.toString());
+		//System.out.println(alumno1.toString());
 
 
 }

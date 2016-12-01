@@ -1,6 +1,6 @@
-
-<!DOCTYPE html>
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <title>Teaching an Education School Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
@@ -57,7 +57,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<a class="navbar-brand" href="home.html">
 							<span style="background-image: url(images/title_bg.jpg);background-size: cover; position: relative;">
 								<img src="C:\Users\arsenicCatnip\Desktop\logo especialidad.png" height="75" width="100" ></img>
-								<i>Computación</i>
+								<i>ComputaciÃ³n</i>
 								</span>
 							</a>
 						</h1>
@@ -89,7 +89,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- banner-bottom -->
 	<div id="about" class="banner-bottom">
 		<div class="container">
-			<h3 class="head">Origen<span> <i>¿ Por qué </i>creamos esta página?</span></h3>
+			<h3 class="head">Origen<span> <i>Â¿ Por quÃ© </i>creamos esta pÃ¡gina?</span></h3>
 			<div class="agileits_banner_bottom_grids">
 				<div class="col-md-6 agileits_banner_bottom_grid_l" style="color:rgb(255,0,0)">
 					<h4>Aliquam a nunc non erat lobortis</h4>
@@ -234,7 +234,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="footer">
 		<div class="container">
 			<div class="col-md-4 w3l_footer_grid">
-				<h2><a href="home.html"><span>C</span>omputación</a></h2>
+				<h2><a href="home.html"><span>C</span>omputaciÃ³n</a></h2>
 				<p>Vestibulum sed convallis massa, eu aliquet massa. Suspendisse 
 					lacinia rutrum tincidunt. Integer id erat porta, convallis tortor a, 
 					ullamcorper magna.</p>
@@ -242,7 +242,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-3 w3l_footer_grid">
 				<h3>Address</h3>
 				<ul class="w3_address">
-					<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Paseo Colón, 650<span>C.A.B.A</span></li>
+					<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Paseo ColÃ³n, 650<span>C.A.B.A</span></li>
 					<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
 					<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
 				</ul>
@@ -251,7 +251,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<img src="images/3.jpg" alt=" " class="img-responsive" style="width: 420px" ><img>
 			</div>	
 			<div class="w3agile_footer_copy">
-				<p>© 2016 Teaching. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+				<p>Â© 2016 Teaching. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
 			</div>
 		</div>
 	</div>
