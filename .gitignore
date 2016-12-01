@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 *.class
 *.java
 *.war
 /target/
 *.jar
 *.rar
+=======
+/bin/
+>>>>>>> frontend
