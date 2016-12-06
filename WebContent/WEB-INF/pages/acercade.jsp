@@ -1,9 +1,5 @@
-<!--
-author: W3layouts
-author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,16 +12,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="<c:url value="/css/bootstrap.css"/>" rel="stylesheet">
+<link href="<c:url value="/css/style.css"/>" rel="stylesheet">
+
 <!-- js -->
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-<!-- //js -->
-<link href='//fonts.googleapis.com/css?family=Capriola' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<script src="<c:url value="/js/jquery-2.1.4.min.js"/>"></script>
+
+<link href="<c:url value="fonts.googleapis.com/css?family=Capriola" />" rel="text/css">
+<link href="<c:url value="fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" />" rel="text/css">
 <!-- start-smoth-scrolling -->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
+
+<script src="<c:url value="/js/move-top.js"/>"></script>
+<script src="<c:url value="/js/easing.js"/>"></script>
+
+
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
@@ -36,8 +36,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </script>
 <!-- start-smoth-scrolling -->
 <!-- animation-effect -->
-<link href="css/animate.min.css" rel="stylesheet"> 
-<script src="js/wow.min.js"></script>
+
+<link href="<c:url value="/css/animate.min.css"/>" rel="stylesheet">
+<link href="<c:url value="/js/wow.min.js""/>" rel="text/javascript">
+
 <script>
  new WOW().init();
 </script>
@@ -58,9 +60,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<span class="icon-bar"></span>
 						</button>
 						<h1>					
-							<a class="navbar-brand" href="home.jsp">
+							<a class="navbar-brand" href="home.html">
 							<span style="background-image: url(images/title_bg.jpg);background-size: cover; position: relative;">
-								<img src="C:\Users\arsenicCatnip\Desktop\logo especialidad.png" height="75" width="100" ></img>
+								<img src="images/logo_especialidad.png" height="75" width="100" ></img>
 								<i>Computación</i>
 								</span>
 							</a>
@@ -76,12 +78,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</ul>
 							</div>
 							<ul class="nav navbar-nav">
-								<li class="active"><a href="login.jsp">Log in</a></li>
-								<li><a href="home.jsp" class="hvr-bounce-to-bottom">Home</a></li>
-								<li><a href="curricula.jsp" class="hvr-bounce-to-bottom">Curricula</a></li>
-								<li><a href="galeria.jsp" class="hvr-bounce-to-bottom">Galeria</a></li>
-								<li><a href="contactos.jsp" class="hvr-bounce-to-bottom">Contactos</a></li>
-								<li><a href="acercade.jsp" class="hvr-bounce-to-bottom">Acerca de...</a></li>									
+								<li class="active"><a href="login.html">Log in</a></li>
+								<li><a href="home.html" class="hvr-bounce-to-bottom">Home</a></li>
+								<li><a href="curricula.html" class="hvr-bounce-to-bottom">Curricula</a></li>
+								<li><a href="galeria.html" class="hvr-bounce-to-bottom">Galeria</a></li>
+								<li><a href="contactos.html" class="hvr-bounce-to-bottom">Contactos</a></li>
+								<li><a href="acercade.html" class="hvr-bounce-to-bottom">Acerca de...</a></li>									
 							</ul>	
 						</nav>
 					</div>
@@ -95,10 +97,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<h3 class="head">Origen<span> <i>¿ Por qué </i>creamos esta página?</span></h3>
 			<div class="agileits_banner_bottom_grids">
-				<div class="col-md-6 agileits_banner_bottom_grid_l" style="color:rgb(255,0,0)">
-					<h4>Aliquam a nunc non erat lobortis</h4>
-					<p><i>Vestibulum nec consequat nisl. Aliquam vehicula egestas commodo. 
-						Pellentesque lorem magna, pulvinar sed lacinia et, venenatis in mi.</i>Nullam sodales rutrum nisl, gravida porttitor lectus porta et. 
+				<div class="col-md-6 agileits_banner_bottom_grid_l" style="background-color:rgba(0,0,0,0.6)">
+					<h4 style="color:rgb(255,255,255)">Aliquam a nunc non erat lobortis</h4>
+					<p style="color:rgb(255,255,255)"> Vestibulum nec consequat nisl. Aliquam vehicula egestas commodo. 
+						Pellentesque lorem magna, pulvinar sed lacinia et, venenatis in mi. Nullam sodales rutrum nisl, gravida porttitor lectus porta et. 
 						Duis purus arcu, semper at magna faucibus, elementum maximus ligula. 
 						Etiam imperdiet posuere odio gravida vehicula. Nulla consectetur massa 
 						eget tincidunt suscipit. Integer vitae ex eros. Cras ornare dignissim 
@@ -111,6 +113,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						Etiam imperdiet posuere odio gravida vehicula. Nulla consectetur massa 
 						eget tincidunt suscipit. Integer vitae ex eros. Cras ornare dignissim 
 						scelerisque.</p>
+						<br>
 				</div>
 				<div class="col-md-6 agileits_banner_bottom_grid_r">
 					<div class="agileits_banner_btm_grid_r">
@@ -131,14 +134,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</figure>
 					</div>
 				</div>
-				<div class="col-md-6 agileits_banner_bottom_grid_l" style="color:rgb(255,0,0)">
-					<h4>Aliquam a nunc non erat lobortis</h4>
-					<p><i>Vestibulum nec consequat nisl. Aliquam vehicula egestas commodo. 
-						Pellentesque lorem magna, pulvinar sed lacinia et, venenatis in mi.</i>Nullam sodales rutrum nisl, gravida porttitor lectus porta et. 
+				<div class="col-md-6 agileits_banner_bottom_grid_l" style="background-color:rgba(0,0,0,0.6)">
+					<h4 style="color:rgb(255,255,255)">Aliquam a nunc non erat lobortis</h4>
+					<p style="color:rgb(255,255,255)"> Vestibulum nec consequat nisl. Aliquam vehicula egestas commodo. 
+						Pellentesque lorem magna, pulvinar sed lacinia et, venenatis in mi. Nullam sodales rutrum nisl, gravida porttitor lectus porta et. 
 						Duis purus arcu, semper at magna faucibus, elementum maximus ligula. 
 						Etiam imperdiet posuere odio gravida vehicula. Nulla consectetur massa 
 						eget tincidunt suscipit. Integer vitae ex eros. Cras ornare dignissim 
 						scelerisque.</p>
+						<br>
 				</div>
 				
 				<div class="clearfix"> </div>
@@ -238,16 +242,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="footer">
 		<div class="container">
 			<div class="col-md-4 w3l_footer_grid">
-				<h2><a href="home.jsp"><span>C</span>omputación</a></h2>
+				<h2><a href="home.html"><span>C</span>omputación</a></h2>
 				<p>Vestibulum sed convallis massa, eu aliquet massa. Suspendisse 
 					lacinia rutrum tincidunt. Integer id erat porta, convallis tortor a, 
 					ullamcorper magna.</p>
 			</div>
 			<div class="col-md-3 w3l_footer_grid">
-				<h3>Address</h3>
+				<h3>Dirección y teléfono</h3>
 				<ul class="w3_address">
 					<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Paseo Colón, 650<span>C.A.B.A</span></li>
-					<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
 					<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
 				</ul>
 			</div>
@@ -255,7 +258,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<img src="images/3.jpg" alt=" " class="img-responsive" style="width: 420px" ><img>
 			</div>	
 			<div class="w3agile_footer_copy">
-				<p>© 2016 Teaching. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
 			</div>
 		</div>
 	</div>
