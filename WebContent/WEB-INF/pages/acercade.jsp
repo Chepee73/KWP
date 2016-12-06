@@ -12,18 +12,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
-<link href="<c:url value="/css/bootstrap.css"/>" rel="stylesheet">
-<link href="<c:url value="/css/style.css"/>" rel="stylesheet">
+<link href="/resources/css/bootstrap.css" rel="stylesheet">
+<link href="/resources/css/style.css" rel="stylesheet">
 
 <!-- js -->
-<script src="<c:url value="/js/jquery-2.1.4.min.js"/>"></script>
+<script src="/resources/js/jquery-2.1.4.min.js"/>"></script>
 
-<link href="<c:url value="fonts.googleapis.com/css?family=Capriola" />" rel="text/css">
-<link href="<c:url value="fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" />" rel="text/css">
+<link href="fonts.googleapis.com/css?family=Capriola" rel="text/css">
+<link href="fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="text/css">
 <!-- start-smoth-scrolling -->
 
-<script src="<c:url value="/js/move-top.js"/>"></script>
-<script src="<c:url value="/js/easing.js"/>"></script>
+<script src="/resources/js/move-top.js"/>"></script>
+<script src="/resources//js/easing.js"/>"></script>
 
 
 <script type="text/javascript">
@@ -37,8 +37,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- start-smoth-scrolling -->
 <!-- animation-effect -->
 
-<link href="<c:url value="/css/animate.min.css"/>" rel="stylesheet">
-<link href="<c:url value="/js/wow.min.js""/>" rel="text/javascript">
+<link href="/resources/css/animate.min.css"/>" rel="stylesheet">
+<script src="/resources/js/wow.min.js"/>"></script>
 
 <script>
  new WOW().init();
@@ -61,9 +61,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</button>
 						<h1>					
 							<a class="navbar-brand" href="home.html">
-							<span style="background-image: url(images/title_bg.jpg);background-size: cover; position: relative;">
-								<img src="images/logo_especialidad.png" height="75" width="100" ></img>
-								<i>ComputaciÃ³n</i>
+							<span style="background-image: url(/resources/images/title_bg.jpg);background-size: cover; position: relative;">
+								<img src="/resources/images/logo_especialidad.png" height="75" width="100" ></img>
+								<i>Computación</i>
 								</span>
 							</a>
 						</h1>
@@ -118,7 +118,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-6 agileits_banner_bottom_grid_r">
 					<div class="agileits_banner_btm_grid_r">
 					<figure>
-						<img src="images/3.jpg" alt=" " class="img-responsive" />
+						<img src="/resources/images/3.jpg" alt=" " class="img-responsive" />
 						<figcaption> image description </figcaption>
 						</figure>
 					</div>
@@ -129,7 +129,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-6 agileits_banner_bottom_grid_r">
 					<div class="agileits_banner_btm_grid_r">
 						<figure>
-						<img src="images/3.jpg" alt=" " class="img-responsive" />
+						<img src="/resources/images/3.jpg" alt=" " class="img-responsive" />
 						<figcaption> image description </figcaption>
 						</figure>
 					</div>
@@ -163,7 +163,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								eu aliquet massa. Suspendisse lacinia rutrum tincidunt. Integer id erat porta, 
 								convallis tortor a, ullamcorper magna.</p>
 							<div class="wthree_testimonials_grid_pos">
-								<img src="images/2.png" alt=" " class="img-responsive" />
+								<img src="/resources/images/2.png" alt=" " class="img-responsive" />
 							</div>
 						</div>
 						<div class="wthree_testimonials_grid1">
@@ -180,7 +180,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								eu aliquet massa. Suspendisse lacinia rutrum tincidunt. Integer id erat porta, 
 								convallis tortor a, ullamcorper magna.</p>
 							<div class="wthree_testimonials_grid_pos">
-								<img src="images/4.png" alt=" " class="img-responsive" />
+								<img src="/resources/images/4.png" alt=" " class="img-responsive" />
 							</div>
 						</div>
 						<div class="wthree_testimonials_grid1">
@@ -197,7 +197,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								eu aliquet massa. Suspendisse lacinia rutrum tincidunt. Integer id erat porta, 
 								convallis tortor a, ullamcorper magna.</p>
 							<div class="wthree_testimonials_grid_pos">
-								<img src="images/3.png" alt=" " class="img-responsive" />
+								<img src="/resources/images/3.png" alt=" " class="img-responsive" />
 							</div>
 						</div>
 						<div class="wthree_testimonials_grid1">
@@ -234,7 +234,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								
 							});
 					</script>
-					<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+					<script type="text/javascript" src="/resources/js/jquery.flexisel.js"></script>
 		</div>
 	</div>
 <!-- //testimonials -->
@@ -255,7 +255,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</ul>
 			</div>
 			<div>
-					<img src="images/3.jpg" alt=" " class="img-responsive" style="width: 420px" ><img>
+					<img src="/resources/images/3.jpg" alt=" " class="img-responsive" style="width: 420px" ><img>
 			</div>	
 			<div class="w3agile_footer_copy">
 			</div>
@@ -263,7 +263,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 <!-- //footer -->
 <!-- for bootstrap working -->
-	<script src="js/bootstrap.js"></script>
+	<script src="/resources/js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
 <!-- here stars scrolling icon -->
 	<script type="text/javascript">

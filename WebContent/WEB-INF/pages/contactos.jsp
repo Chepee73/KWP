@@ -16,16 +16,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/resources/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/resources/css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- js -->
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="t/resources/ext/javascript" src="js/jquery-2.1.4.min.js"></script>
 <!-- //js -->
 <link href='//fonts.googleapis.com/css?family=Capriola' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <!-- start-smoth-scrolling -->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="/resources/js/move-top.js"></script>
+<script type="text/javascript" src="/resources/js/easing.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
@@ -36,8 +36,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </script>
 <!-- start-smoth-scrolling -->
 <!-- animation-effect -->
-<link href="css/animate.min.css" rel="stylesheet"> 
-<script src="js/wow.min.js"></script>
+<link href="/resources/css/animate.min.css" rel="stylesheet"> 
+<script src="/resources/js/wow.min.js"></script>
 <script>
  new WOW().init();
 </script>
@@ -60,8 +60,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</button>
 						<h1>					
 							<a class="navbar-brand" href="home.html">
-							<span style="background-image: url(images/title_bg.jpg);background-size: cover; position: relative;">
-								<img src="images/logo_especialidad.png" height="75" width="100" ></img>
+							<span style="background-image: url(/resources/images/title_bg.jpg);background-size: cover; position: relative;">
+								<img src="/resources/images/logo_especialidad.png" height="75" width="100" ></img>
 								<i>Computación</i>
 								</span>
 							</a>
@@ -148,7 +148,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</ul>
 			</div>
 			<div>
-					<img src="images/3.jpg" alt=" " class="img-responsive" style="width: 420px" ><img>
+					<img src="/resources/images/3.jpg" alt=" " class="img-responsive" style="width: 420px" ><img>
 			</div>	
 			<div class="w3agile_footer_copy">
 			</div>
