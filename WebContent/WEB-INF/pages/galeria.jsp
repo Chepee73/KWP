@@ -16,10 +16,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
-<link href="/resources/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="/resources/css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link href="/resources/css/imagehover.css" rel="stylesheet" media="all">
-<link type="text/css" rel="stylesheet" href="/resources/css/cm-overlay.css" />
+<link href="${pageContext.request.contextPath}/resources/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="${pageContext.request.contextPath}/resources/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="${pageContext.request.contextPath}/resources/css/imagehover.css" rel="stylesheet" media="all">
+<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/cm-overlay.css" />
 <!-- js -->
 <script type="text/javascript" src="/resources/js/jquery-2.1.4.min.js"></script>
 
@@ -27,8 +27,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='//fonts.googleapis.com/css?family=Capriola' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <!-- start-smoth-scrolling -->
-<script type="text/javascript" src="/resources/js/move-top.js"></script>
-<script type="text/javascript" src="/resources/js/easing.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/move-top.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/easing.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
@@ -56,7 +56,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h1>					
 							<a class="navbar-brand" href="home.html">
 							<span style="background-image: url(/resources/images/title_bg.jpg);background-size: cover; position: relative;">
-								<img src="/resources/images/logo_especialidad.png" height="75" width="100" ></img>
+								<img src="${pageContext.request.contextPath}/resources/images/logo_especialidad.png" height="75" width="100" ></img>
 								<i>Computación</i>
 								</span>
 							</a>
@@ -113,8 +113,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="w3_tab_img">
 								<div class="col-md-4 w3_tab_img_left">
 									<div class="demo">
-										<a class="cm-overlay" href="/resources/images/6.jpg">
-										  <figure class="imghvr-shutter-in-out-diag-2"><img src="/resources/images/6.jpg" alt=" " class="img-responsive"/>
+										<a class="cm-overlay" href="${pageContext.request.contextPath}/resources/images/6.jpg">
+										  <figure class="imghvr-shutter-in-out-diag-2"><img src="${pageContext.request.contextPath}/resources/images/6.jpg" alt=" " class="img-responsive"/>
 											<figcaption>
 											  <h3>Teaching</h3>
 											  <p>Phasellus elementum ullamcorper urna, 
@@ -126,8 +126,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="col-md-4 w3_tab_img_left">
 									<div class="demo">
-										<a class="cm-overlay" href="/resources/images/1.jpg">
-										  <figure class="imghvr-shutter-in-out-diag-2"><img src="/resources/images/1.jpg" alt=" " class="img-responsive" />
+										<a class="cm-overlay" href="${pageContext.request.contextPath}/resources/images/1.jpg">
+										  <figure class="imghvr-shutter-in-out-diag-2"><img src="${pageContext.request.contextPath}/resources/images/1.jpg" alt=" " class="img-responsive" />
 											<figcaption>
 											  <h3>Teaching</h3>
 											  <p>Phasellus elementum ullamcorper urna, 
@@ -140,8 +140,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								
 								<div class="col-md-4 w3_tab_img_left">
 									<div class="demo">
-										<a class="cm-overlay" href="/resources/images/7.jpg">
-										  <figure class="imghvr-shutter-in-out-diag-2"><img src="/resources/images/7.jpg" alt=" " class="img-responsive" />
+										<a class="cm-overlay" href="${pageContext.request.contextPath}/resources/images/7.jpg">
+										  <figure class="imghvr-shutter-in-out-diag-2"><img src="${pageContext.request.contextPath}/resources/images/7.jpg" alt=" " class="img-responsive" />
 											<figcaption>
 											  <h3>Teaching</h3>
 											  <p>Phasellus elementum ullamcorper urna, 
@@ -153,8 +153,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="col-md-4 w3_tab_img_left">
 									<div class="demo">
-										<a class="cm-overlay" href="/resources/images/8.jpg">
-										  <figure class="imghvr-shutter-in-out-diag-2"><img src="/resources/images/8.jpg" alt=" " class="img-responsive" />
+										<a class="cm-overlay" href="${pageContext.request.contextPath}/resources/images/8.jpg">
+										  <figure class="imghvr-shutter-in-out-diag-2"><img src="${pageContext.request.contextPath}/resources/images/8.jpg" alt=" " class="img-responsive" />
 											<figcaption>
 											  <h3>Teaching</h3>
 											  <p>Phasellus elementum ullamcorper urna, 
@@ -166,8 +166,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="col-md-4 w3_tab_img_left">
 									<div class="demo">
-										<a class="cm-overlay" href="/resources/images/9.jpg">
-										  <figure class="imghvr-shutter-in-out-diag-2"><img src="/resources/images/9.jpg" alt=" " class="img-responsive" />
+										<a class="cm-overlay" href="${pageContext.request.contextPath}/resources/images/9.jpg">
+										  <figure class="imghvr-shutter-in-out-diag-2"><img src="${pageContext.request.contextPath}/resources/images/9.jpg" alt=" " class="img-responsive" />
 											<figcaption>
 											  <h3>Teaching</h3>
 											  <p>Phasellus elementum ullamcorper urna, 
@@ -179,8 +179,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="col-md-4 w3_tab_img_left">
 									<div class="demo">
-										<a class="cm-overlay" href="/resources/images/10.jpg">
-										  <figure class="imghvr-shutter-in-out-diag-2"><img src="/resources/images/10.jpg" alt=" " class="img-responsive" />
+										<a class="cm-overlay" href="${pageContext.request.contextPath}/resources/images/10.jpg">
+										  <figure class="imghvr-shutter-in-out-diag-2"><img src="${pageContext.request.contextPath}/resources/images/10.jpg" alt=" " class="img-responsive" />
 											<figcaption>
 											  <h3>Teaching</h3>
 											  <p>Phasellus elementum ullamcorper urna, 
@@ -192,8 +192,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="col-md-4 w3_tab_img_left">
 									<div class="demo">
-										<a class="cm-overlay" href="/resources/images/11.jpg">
-										  <figure class="imghvr-shutter-in-out-diag-2"><img src="/resources/images/11.jpg" alt=" " class="img-responsive" />
+										<a class="cm-overlay" href="${pageContext.request.contextPath}/resources/images/11.jpg">
+										  <figure class="imghvr-shutter-in-out-diag-2"><img src="${pageContext.request.contextPath}/resources/images/11.jpg" alt=" " class="img-responsive" />
 											<figcaption>
 											  <h3>Teaching</h3>
 											  <p>Phasellus elementum ullamcorper urna, 
@@ -205,8 +205,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="col-md-4 w3_tab_img_left">
 									<div class="demo">
-										<a class="cm-overlay" href="/resources/images/12.jpg">
-										  <figure class="imghvr-shutter-in-out-diag-2"><img src="/resources/images/12.jpg" alt=" " class="img-responsive" />
+										<a class="cm-overlay" href="${pageContext.request.contextPath}/resources/images/12.jpg">
+										  <figure class="imghvr-shutter-in-out-diag-2"><img src="${pageContext.request.contextPath}/resources/images/12.jpg" alt=" " class="img-responsive" />
 											<figcaption>
 											  <h3>Teaching</h3>
 											  <p>Phasellus elementum ullamcorper urna, 
@@ -218,8 +218,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="col-md-4 w3_tab_img_left">
 									<div class="demo">
-										<a class="cm-overlay" href="/resources/images/13.jpg">
-										  <figure class="imghvr-shutter-in-out-diag-2"><img src="/resources/images/13.jpg" alt=" " class="img-responsive" />
+										<a class="cm-overlay" href="${pageContext.request.contextPath}/resources/images/13.jpg">
+										  <figure class="imghvr-shutter-in-out-diag-2"><img src="${pageContext.request.contextPath}/resources/images/13.jpg" alt=" " class="img-responsive" />
 											<figcaption>
 											  <h3>Teaching</h3>
 											  <p>Phasellus elementum ullamcorper urna, 
@@ -264,8 +264,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="w3_tab_img">
 								<div class="col-md-4 w3_tab_img_left">
 									<div class="demo">
-										<a class="cm-overlay" href="/resources/images/6.jpg">
-										  <figure class="imghvr-shutter-in-out-diag-2"><img src="/resources/images/6.jpg" alt=" " class="img-responsive">
+										<a class="cm-overlay" href="${pageContext.request.contextPath}/resources/images/6.jpg">
+										  <figure class="imghvr-shutter-in-out-diag-2"><img src="${pageContext.request.contextPath}/resources/images/6.jpg" alt=" " class="img-responsive">
 											<figcaption>
 											  <h3>Teaching</h3>
 											  <p>Phasellus elementum ullamcorper urna, 
@@ -277,8 +277,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="col-md-4 w3_tab_img_left">
 									<div class="demo">
-										<a class="cm-overlay" href="/resources/images/7.jpg">
-										  <figure class="imghvr-shutter-in-out-diag-2"><img src="/resources/images/7.jpg" alt=" " class="img-responsive">
+										<a class="cm-overlay" href="${pageContext.request.contextPath}/resources/images/7.jpg">
+										  <figure class="imghvr-shutter-in-out-diag-2"><img src="${pageContext.request.contextPath}/resources/images/7.jpg" alt=" " class="img-responsive">
 											<figcaption>
 											  <h3>Teaching</h3>
 											  <p>Phasellus elementum ullamcorper urna, 
@@ -291,7 +291,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="col-md-4 w3_tab_img_left">
 									<div class="demo">
 										<a class="cm-overlay" href="/resources/images/9.jpg">
-										  <figure class="imghvr-shutter-in-out-diag-2"><img src="/resources/images/9.jpg" alt=" " class="img-responsive">
+										  <figure class="imghvr-shutter-in-out-diag-2"><img src="${pageContext.request.contextPath}/resources/images/9.jpg" alt=" " class="img-responsive">
 											<figcaption>
 											  <h3>Teaching</h3>
 											  <p>Phasellus elementum ullamcorper urna, 
@@ -308,8 +308,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="w3_tab_img">
 								<div class="col-md-4 w3_tab_img_left">
 									<div class="demo">
-										<a class="cm-overlay" href="/resources/images/11.jpg">
-										  <figure class="imghvr-shutter-in-out-diag-2"><img src="/resources/images/11.jpg" alt=" " class="img-responsive">
+										<a class="cm-overlay" href="${pageContext.request.contextPath}/resources/images/11.jpg">
+										  <figure class="imghvr-shutter-in-out-diag-2"><img src="${pageContext.request.contextPath}/resources/images/11.jpg" alt=" " class="img-responsive">
 											<figcaption>
 											  <h3>Teaching</h3>
 											  <p>Phasellus elementum ullamcorper urna, 
@@ -321,8 +321,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="col-md-4 w3_tab_img_left">
 									<div class="demo">
-										<a class="cm-overlay" href="/resources/images/12.jpg">
-										  <figure class="imghvr-shutter-in-out-diag-2"><img src="/resources/images/12.jpg" alt=" " class="img-responsive">
+										<a class="cm-overlay" href="${pageContext.request.contextPath}/resources/images/12.jpg">
+										  <figure class="imghvr-shutter-in-out-diag-2"><img src="${pageContext.request.contextPath}/resources/images/12.jpg" alt=" " class="img-responsive">
 											<figcaption>
 											  <h3>Teaching</h3>
 											  <p>Phasellus elementum ullamcorper urna, 
@@ -340,7 +340,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="col-md-4 w3_tab_img_left">
 									<div class="demo">
 										<a class="cm-overlay" href="/resources/images/8.jpg">
-										  <figure class="imghvr-shutter-in-out-diag-2"><img src="/resources/images/8.jpg" alt=" " class="img-responsive">
+										  <figure class="imghvr-shutter-in-out-diag-2"><img src="${pageContext.request.contextPath}/resources/images/8.jpg" alt=" " class="img-responsive">
 											<figcaption>
 											  <h3>Teaching</h3>
 											  <p>Phasellus elementum ullamcorper urna, 
@@ -355,9 +355,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 					</div>
 				</div>
-				<script src="/resources/js/jquery.tools.min.js"></script>
-				<script src="/resources/js/jquery.mobile.custom.min.js"></script>
-				<script src="/resources/js/jquery.cm-overlay.js"></script>
+				<script src="${pageContext.request.contextPath}/resources/js/jquery.tools.min.js"></script>
+				<script src="${pageContext.request.contextPath}/resources/js/jquery.mobile.custom.min.js"></script>
+				<script src="${pageContext.request.contextPath}/resources/js/jquery.cm-overlay.js"></script>
 				<script>
 					$(document).ready(function(){
 						$('.cm-overlay').cmOverlay();
@@ -370,9 +370,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 			
   
-				<script src="/resources/js/jquery.tools.min.js"></script>
-				<script src="/resources/js/jquery.mobile.custom.min.js"></script>
-				<script src="/resources/js/jquery.cm-overlay.js"></script>
+				<script src="${pageContext.request.contextPath}/resources/js/jquery.tools.min.js"></script>
+				<script src="${pageContext.request.contextPath}/resources/js/jquery.mobile.custom.min.js"></script>
+				<script src="${pageContext.request.contextPath}/resources/js/jquery.cm-overlay.js"></script>
 				<script>
 					$(document).ready(function(){
 						$('.cm-overlay').cmOverlay();
@@ -397,7 +397,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</ul>
 			</div>
 			<div>
-					<img src="/resources/images/3.jpg" alt=" " class="img-responsive" style="width: 420px" ><img>
+					<img src="${pageContext.request.contextPath}/resources/images/3.jpg" alt=" " class="img-responsive" style="width: 420px" ><img>
 			</div>	
 			<div class="w3agile_footer_copy">
 			</div>
@@ -405,7 +405,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 <!-- //footer -->
 <!-- for bootstrap working -->
-	<script src="/resources/js/bootstrap.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
 <!-- here stars scrolling icon -->
 	<script type="text/javascript">
