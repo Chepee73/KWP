@@ -30,10 +30,10 @@
 <mvc:annotation-driven />
 <mvc:default-servlet-handler />
 
-<mvc:resources mapping="*/resources/**" location="/META-INF/resources/" />
-<mvc:resources mapping="*/css/**" location="/META-INF/resources/css/"/>
-<mvc:resources mapping="*/js/**" location="/META-INF/resources/assets/js/"/>
-<mvc:resources mapping="*/fonts/**" location="/META-INF/resources/fonts/"/>
-<mvc:resources mapping="*/images/**" location="/META-INF/resources/images"/>
+<mvc:resources mapping="/resources/**" location="/META-INF/resources/" />
+<mvc:resources mapping="/css/**" location="/META-INF/resources/css/"/>
+<mvc:resources mapping="/js/**" location="/META-INF/resources/assets/js/"/>
+<mvc:resources mapping="/fonts/**" location="/META-INF/resources/fonts/"/>
+<mvc:resources mapping="/images/**" location="/META-INF/resources/images"/>
 
 </beans>
